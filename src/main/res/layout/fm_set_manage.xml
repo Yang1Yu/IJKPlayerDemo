@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pv="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/tv_set_manage_switch_manage"
+        style="@style/set_detail"
+        android:text="启用" />
+
+    <ImageView
+        android:id="@+id/iv_set_manage_line1"
+        style="@style/set_right_line"
+        android:layout_below="@+id/tv_set_manage_switch_manage" />
+
+    <TextView
+        android:id="@+id/tv_set_manage_remote_server"
+        style="@style/set_detail"
+        android:layout_below="@+id/iv_set_manage_line1"
+        android:text="远程服务器" />
+
+    <ImageView
+        android:id="@+id/iv_set_manage_line3"
+        style="@style/set_right_line"
+        android:layout_below="@+id/tv_set_manage_remote_server" />
+
+    <TextView
+        android:id="@+id/tv_set_manage_port"
+        style="@style/set_detail"
+        android:layout_below="@+id/iv_set_manage_line3"
+        android:text="端口" />
+
+    <ImageView
+        android:id="@+id/iv_set_manage_line4"
+        style="@style/set_right_line"
+        android:layout_below="@+id/tv_set_manage_port" />
+
+    <TextView
+        android:id="@+id/tv_set_manage_speed_limit"
+        style="@style/set_detail"
+        android:layout_below="@+id/iv_set_manage_line4"
+        android:text="最高限速" />
+
+    <ImageView
+        android:id="@+id/iv_set_manage_line5"
+        style="@style/set_right_line"
+        android:layout_below="@+id/tv_set_manage_speed_limit" />
+
+    <TextView
+        android:id="@+id/tv_set_manage_dangerous"
+        style="@style/set_detail"
+        android:layout_below="@+id/iv_set_manage_line5"
+        android:text="危险驾驶测试" />
+
+    <ImageView
+        android:id="@+id/iv_set_manage_line6"
+        style="@style/set_right_line"
+        android:layout_below="@+id/tv_set_manage_dangerous" />
+
+    <TextView
+        android:id="@+id/tv_set_manage_remote_monitor"
+        style="@style/set_detail"
+        android:layout_below="@+id/iv_set_manage_line6"
+        android:text="远程视频监控" />
+
+    <ImageView
+        android:id="@+id/iv_set_manage_line7"
+        style="@style/set_right_line"
+        android:layout_below="@+id/tv_set_manage_remote_monitor" />
+
+    <com.hejia.myview.SwitchButton
+        android:id="@+id/switch_set_manage_manage"
+        style="@style/set_switchbutton"
+        android:track="@drawable/switch_set_track"
+        pv:mask="@drawable/switch_set_mask" />
+
+    <com.hejia.myview.SwitchButton
+        android:id="@+id/switch_set_manage_dangerous"
+        style="@style/set_switchbutton"
+        android:layout_below="@+id/iv_set_manage_line5"
+        android:track="@drawable/switch_set_track"
+        pv:mask="@drawable/switch_set_mask" />
+
+    <com.hejia.myview.SwitchButton
+        android:id="@+id/switch_set_manage_remote_monitor"
+        style="@style/set_switchbutton"
+        android:layout_below="@+id/iv_set_manage_line6"
+        android:track="@drawable/switch_set_track"
+        pv:mask="@drawable/switch_set_mask" />
+
+</RelativeLayout>

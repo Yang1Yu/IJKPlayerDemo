@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:id="@+id/fl_carlife"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@drawable/bg_carlife_main_disconn">
+
+    <ImageView
+        android:id="@+id/iv_carlife_qr"
+        android:layout_width="400dp"
+        android:layout_height="488dp"
+        android:layout_marginLeft="184dp"
+        android:layout_marginTop="51dp"
+        android:src="@drawable/img_carlife_qr"/>
+
+    <Button
+        android:id="@+id/btn_carlife_conn"
+        android:layout_width="265dp"
+        android:layout_height="76dp"
+        android:layout_marginLeft="251dp"
+        android:layout_marginTop="624dp"
+        android:background="@drawable/img_carlife_conn1"/>
+    <!--连接成功后显示-->
+    <com.hejia.myview.CarlifeSurfaceView
+        android:id="@+id/sview_carlife"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="128dp"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/btn_carlife_exit"
+        android:layout_width="284dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="642dp"
+        android:layout_marginLeft="69dp"
+        android:background="@drawable/img_carlife_exit"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/btn_carlife_reconn"
+        android:layout_width="284dp"
+        android:layout_height="83dp"
+        android:layout_marginLeft="415dp"
+        android:layout_marginTop="642dp"
+        android:background="@drawable/img_carlife_reconn"
+        android:visibility="gone"/>
+</FrameLayout>

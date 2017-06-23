@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pv="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_set_cloud_switch_cloud"
+        style="@style/set_detail"
+        android:text="启用" />
+
+    <com.hejia.myview.SwitchButton
+        android:id="@+id/switch_set_cloud_cloud"
+        style="@style/set_switchbutton"
+        android:track="@drawable/switch_set_track"
+        pv:mask="@drawable/switch_set_mask" />
+
+    <ImageView
+        android:id="@+id/iv_set_cloud_line1"
+        style="@style/set_right_line"
+        android:layout_below="@+id/tv_set_cloud_switch_cloud" />
+
+    <TextView
+        android:id="@+id/tv_set_cloud_server"
+        style="@style/set_detail"
+        android:layout_below="@+id/iv_set_cloud_line1"
+        android:text="云诊断服务器" />
+
+    <ImageView
+        android:id="@+id/iv_set_cloud_line2"
+        style="@style/set_right_line"
+        android:layout_below="@+id/tv_set_cloud_server" />
+
+    <TextView
+        android:id="@+id/tv_set_cloud_port"
+        style="@style/set_detail"
+        android:layout_below="@+id/iv_set_cloud_line2"
+        android:text="端口" />
+
+    <ImageView
+        android:id="@+id/iv_set_cloud_line3"
+        style="@style/set_right_line"
+        android:layout_below="@+id/tv_set_cloud_port" />
+
+    <TextView
+        android:id="@+id/tv_set_cloud_switch_packet"
+        style="@style/set_detail"
+        android:layout_below="@+id/iv_set_cloud_line3"
+        android:text="转发报文" />
+
+    <com.hejia.myview.SwitchButton
+        android:id="@+id/switch_set_cloud_packet"
+        style="@style/set_switchbutton"
+        android:layout_below="@+id/iv_set_cloud_line3"
+        android:track="@drawable/switch_set_track"
+        pv:mask="@drawable/switch_set_mask" />
+
+    <ImageView
+        android:id="@+id/iv_set_cloud_line4"
+        style="@style/set_right_line"
+        android:layout_below="@+id/tv_set_cloud_switch_packet" />
+
+    <TextView
+        android:id="@+id/tv_set_cloud_switch_clash"
+        style="@style/set_detail"
+        android:layout_below="@+id/iv_set_cloud_line4"
+        android:text="碰撞测试" />
+
+    <com.hejia.myview.SwitchButton
+        android:id="@+id/switch_set_cloud_clash"
+        style="@style/set_switchbutton"
+        android:layout_below="@+id/iv_set_cloud_line4"
+        android:track="@drawable/switch_set_track"
+        pv:mask="@drawable/switch_set_mask" />
+
+    <ImageView
+        android:id="@+id/iv_set_cloud_line7"
+        style="@style/set_right_line"
+        android:layout_below="@+id/tv_set_cloud_switch_clash" />
+
+    <TextView
+        android:id="@+id/tv_set_cloud_switch_update"
+        style="@style/set_detail"
+        android:layout_below="@+id/iv_set_cloud_line7"
+        android:text="固件云升级" />
+
+    <com.hejia.myview.SwitchButton
+        android:id="@+id/switch_set_cloud_update"
+        style="@style/set_switchbutton"
+        android:layout_below="@+id/iv_set_cloud_line7"
+        android:track="@drawable/switch_set_track"
+        pv:mask="@drawable/switch_set_mask" />
+
+    <ImageView
+        android:id="@+id/iv_set_cloud_line8"
+        style="@style/set_right_line"
+        android:layout_below="@+id/tv_set_cloud_switch_update" />
+
+</RelativeLayout>

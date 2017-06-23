@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_navi"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.amap.api.maps.TextureMapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_map_bgtop"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_map_top" />
+
+    <ImageView
+        android:id="@+id/iv_map_bgtitle"
+        android:layout_width="536dp"
+        android:layout_height="56dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="6dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_map_title" />
+
+    <AutoCompleteTextView
+        android:id="@+id/et_map_poi"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="86dp"
+        android:layout_marginTop="9dp"
+        android:background="@null"
+        android:completionThreshold="1"
+        android:dropDownHeight="388dp"
+        android:dropDownVerticalOffset="0dp"
+        android:hint="请输入关键字"
+        android:imeOptions="actionDone"
+        android:inputType="text|textAutoComplete|textNoSuggestions"
+        android:maxLength="20"
+        android:paddingRight="37.0dip"
+        android:popupBackground="#fff"
+        android:singleLine="true"
+        android:textColor="#000000"
+        android:textColorHint="#c0c0c0"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/btn_map_search"
+        android:layout_width="81dp"
+        android:layout_height="56dp"
+        android:layout_marginLeft="488dp"
+        android:layout_marginTop="6dp"
+        android:background="@null"
+        android:gravity="center"
+        android:text="搜索"
+        android:textColor="#dbdbdb"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/btn_map_mylocation"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/img_map_mylocation" />
+
+    <Button
+        android:id="@+id/btn_map_traffic"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/img_map_tuaffic1" />
+
+    <Button
+        android:id="@+id/btn_map_2d"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="160dp"
+        android:background="@drawable/img_map_2d"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_map_3d"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="160dp"
+        android:background="@drawable/img_map_3d" />
+
+</FrameLayout>

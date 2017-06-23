@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_bt_no"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="蓝牙连接已断开"
+        android:textColor="@drawable/textcolor_bt"
+        android:textSize="35sp" />
+
+    <Button
+        android:id="@+id/btn_popbtdisconn_close"
+        android:layout_width="144dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/img_bt_disconn"
+        android:onClick="close_DisconnectPop"
+        android:text="关闭（5s）"
+        android:textColor="@drawable/textcolor_bt"
+        android:textSize="25sp" />
+
+</LinearLayout>

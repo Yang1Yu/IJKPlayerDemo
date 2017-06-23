@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <ImageView
+        android:id="@+id/iv_bt_ctd_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/img_bt_ctd_top" />
+    <TextView
+        android:id="@+id/tv_bt_ctd_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/iv_bt_ctd_top"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="50dp"
+        android:text="正在连接"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/iv_bt_ctd_line1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_bt_ctd_title"
+        android:layout_marginTop="8dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_bt_line" />
+
+    <TextView
+        android:id="@+id/tv_bt_ctd_nowpair"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/iv_bt_ctd_line1"
+        android:gravity="center_vertical"
+        android:paddingLeft="50dp"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="#dbdbdb"
+        android:textSize="25sp" />
+
+    <ImageView
+        android:id="@+id/iv_bt_ctd_line2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_bt_ctd_nowpair"
+        android:layout_marginTop="8dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_bt_line" />
+
+    <TextView
+        android:id="@+id/tv_bt_ctd_title_another"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/iv_bt_ctd_line2"
+        android:gravity="center_vertical"
+        android:paddingLeft="50dp"
+        android:text="已配对设备"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/iv_bt_ctd_line3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_bt_ctd_title_another"
+        android:layout_marginTop="8dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_bt_line" />
+
+    <ListView
+        android:id="@+id/lv_bt_ctd"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_below="@+id/iv_bt_ctd_line3"
+        android:divider="@null"
+        android:dividerHeight="0dp" />
+
+    <ImageView
+        android:id="@+id/iv_bt_ctd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:scaleType="center"
+        android:src="@drawable/bg_bt_ctd" />
+
+</RelativeLayout>

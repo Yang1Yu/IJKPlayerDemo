@@ -1,0 +1,66 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '25.0.0'
+    defaultConfig {
+        applicationId "com.hejia.tp_launcher_v3"
+        minSdkVersion 19
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        // Enabling multidex support.
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    dexOptions {
+        javaMaxHeapSize "2g"
+    }
+ }
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    testCompile 'junit:junit:4.12'
+    compile 'com.google.android.gms:play-services:10.2.0'
+    //    compile 'com.android.support:multidex:1.0.0'
+    compile 'com.android.support:appcompat-v7:25.2.0'
+    compile files('libs/Msc.jar')
+    compile 'de.greenrobot:eventbus:3.0.0-beta1'
+    compile project(path: ':IjkLib')
+}
+
+
+def getLayoutLibPath() {
+    return "${android.getSdkDirectory().getAbsolutePath()}" + "/platforms/" + android.compileSdkVersion + "/data/layoutlib.jar"
+}
+android.applicationVariants.all { variant ->
+    task "fix${variant.name.capitalize()}MainDexClassList" << {
+        logger.info "Fixing main dex keep file for $variant.name"
+        File keepFile = new File("$buildDir/intermediates/multi-dex/$variant.buildType.name/maindexlist.txt")
+        keepFile.withWriterAppend { w ->
+            // Get a reader for the input file
+            w.append('\n')
+            new File("${projectDir}/multidex.keep").withReader { r ->
+                // And write data from the input into the output
+                w << r << '\n'
+            }
+            logger.info "Updated main dex keep file for ${keepFile.getAbsolutePath()}\n$keepFile.text"
+        }
+    }
+}
+tasks.whenTaskAdded { task ->
+    android.applicationVariants.all { variant ->
+        if (task.name == "create${variant.name.capitalize()}MainDexClassList") {
+            task.finalizedBy "fix${variant.name.capitalize()}MainDexClassList"
+        }
+    }
+}

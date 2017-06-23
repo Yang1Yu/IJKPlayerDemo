@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="500dp" >
+
+    <TextView
+        android:id="@+id/tv_pop_date_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textColor="#111"
+        android:textSize="25sp" />
+
+    <DatePicker
+        android:id="@+id/datepicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tv_pop_date_title"
+        android:layout_marginLeft="90dp"
+        android:calendarViewShown="false" />
+
+    <TimePicker
+        android:id="@+id/timepicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/datepicker"
+        android:layout_toRightOf="@+id/datepicker" />
+
+    <Button
+        android:id="@+id/btn_pop_date_yes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/timepicker"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="55dp"
+        android:background="@drawable/img_set_yes" />
+
+    <Button
+        android:id="@+id/btn_pop_date_no"
+        style="@style/dialog_set_no"
+        android:layout_alignTop="@+id/btn_pop_date_yes"
+        android:layout_toRightOf="@+id/btn_pop_date_yes" />
+
+</RelativeLayout>

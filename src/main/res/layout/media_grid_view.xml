@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#9000"
+                android:gravity="center"
+                android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="500dp"
+        android:layout_height="580dp"
+        android:background="@drawable/img_media_popview_bg">
+
+        <Button
+            android:id="@+id/btn_media_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dp"
+            android:background="#00FFFFFF"
+            android:text="返回"
+            android:textColor="#111"/>
+
+        <Button
+            android:id="@+id/btn_media_all"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dp"
+            android:background="#00FFFFFF"
+            android:gravity="right|center_vertical"
+            android:text="全选"
+            android:textColor="#111"
+            android:visibility="gone"/>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_media_back"
+            >
+
+            <FrameLayout
+                android:id="@+id/fl_second_device"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <GridView
+                    android:id="@+id/media_grid_view"
+                    android:layout_width="500dp"
+                    android:layout_height="450dp"
+                    android:layout_below="@+id/btn_media_back"
+                    android:cacheColorHint="#00000000"
+                    android:columnWidth="80dp"
+                    android:gravity="center"
+                    android:horizontalSpacing="3dp"
+                    android:numColumns="auto_fit"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="5dp"/>
+
+                <TextView
+                    android:id="@+id/media_empty_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:text="文件夹为空"
+                    android:textColor="#111"
+                    android:textSize="30sp"
+                    android:visibility="gone"/>
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_root_device"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/ll_device"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_device_storage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center_horizontal"
+                        android:src="@drawable/img_sd_card"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center_horizontal"
+                        android:text="本机内存"
+                        android:textColor="#111"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/iv_sd_card"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center_horizontal"
+                        android:src="@drawable/img_sd_card"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center_horizontal"
+                        android:text="SD内存"
+                        android:textColor="#111"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_upan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/iv_upan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center_horizontal"
+                        android:src="@drawable/img_sd_card"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center_horizontal"
+                        android:text="U盘"
+                        android:textColor="#111"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="6dp">
+
+            <Button
+                android:id="@+id/btn_media_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:background="@drawable/img_media_grid_ok"/>
+
+            <Button
+                android:id="@+id/btn_media_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/img_media_grid_cancel"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+

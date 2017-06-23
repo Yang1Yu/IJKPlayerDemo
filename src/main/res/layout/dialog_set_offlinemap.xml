@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:background="@null" >
+
+    <TextView
+        android:id="@+id/tv_dialog_set_offlinemap_area"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="延边朝鲜族自治州"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/btn_dialog_set_offlinemap_cancel"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/img_offlinemap_cancel" />
+
+    <ImageView
+        android:id="@+id/iv_dialog_set_offlinemap_line1"
+        style="@style/dialog_set_line"
+        android:layout_below="@+id/tv_dialog_set_offlinemap_area" />
+
+    <Button
+        android:id="@+id/btn_dialog_set_offlinemap_update"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/iv_dialog_set_offlinemap_line1"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/img_offlinemap_update" />
+
+    <Button
+        android:id="@+id/btn_dialog_set_offlinemap_delete"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_dialog_set_offlinemap_line1"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/btn_dialog_set_offlinemap_update"
+        android:background="@drawable/img_offlinemap_delete" />
+
+</RelativeLayout>

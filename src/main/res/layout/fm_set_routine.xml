@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pv="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/tv_set_routine_brightness"
+        style="@style/set_detail"
+        android:text="自动亮度" />
+
+    <ImageView
+        android:id="@+id/iv_set_routine_line1"
+        style="@style/set_right_line"
+        android:layout_below="@+id/tv_set_routine_brightness" />
+
+    <TextView
+        android:id="@+id/tv_set_routine_shock"
+        style="@style/set_detail"
+        android:layout_below="@+id/iv_set_routine_line1"
+        android:text="触控震动反馈" />
+
+    <ImageView
+        android:id="@+id/iv_set_routine_line3"
+        style="@style/set_right_line"
+        android:layout_below="@+id/tv_set_routine_shock" />
+
+    <TextView
+        android:id="@+id/tv_set_routine_time"
+        style="@style/set_detail"
+        android:layout_below="@+id/iv_set_routine_line3"
+        android:clickable="true"
+        android:text="日期和时间" />
+
+    <ImageView
+        android:id="@+id/iv_set_routine_line4"
+        style="@style/set_right_line"
+        android:layout_below="@+id/tv_set_routine_time" />
+
+    <com.hejia.myview.SwitchButton
+        android:id="@+id/switch_set_routine_autobright"
+        style="@style/set_switchbutton"
+        android:layout_alignParentTop="true"
+        android:track="@drawable/switch_set_track"
+        pv:mask="@drawable/switch_set_mask" />
+
+    <com.hejia.myview.SwitchButton
+        android:id="@+id/switch_set_routine_shock"
+        style="@style/set_switchbutton"
+        android:layout_below="@+id/iv_set_routine_line1"
+        android:track="@drawable/switch_set_track"
+        pv:mask="@drawable/switch_set_mask" />
+
+</RelativeLayout>

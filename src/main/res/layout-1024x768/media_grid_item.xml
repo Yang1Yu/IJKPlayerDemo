@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="4dp" >
+
+    <ImageView
+        android:id="@+id/fileIcon"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="center" >
+    </ImageView>
+
+    <com.hejia.media.MyTextView
+        android:id="@+id/fileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fileIcon"
+        android:layout_centerHorizontal="true"
+        android:ellipsize="marquee"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="#111"/>
+
+    <CheckBox
+        android:id="@+id/checkbox_folder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="4dp" 
+        android:button="@drawable/selector_checkbox_folder"
+        android:clickable="false"
+        android:focusable="false"
+        android:gravity="center_vertical"
+        android:visibility="invisible" />
+
+    <CheckBox
+        android:id="@+id/checkbox_file"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="4dp"
+        android:button="@drawable/checkbox_checked_file"
+        android:focusable="false"
+        android:gravity="center_vertical"
+        android:visibility="gone" />
+
+</RelativeLayout>

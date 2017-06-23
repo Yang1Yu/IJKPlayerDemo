@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="500dp"
+                android:layout_height="230dp"
+                android:background="@drawable/pop_bg">
+
+    <Button
+        android:id="@+id/btn_popac_windadd"
+        android:layout_width="83dp"
+        android:layout_height="54dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/img_popac_windadd"
+        android:onClick="btnWindAdd"/>
+
+    <Button
+        android:id="@+id/btn_popac_zc"
+        android:layout_width="83dp"
+        android:layout_height="62dp"
+        android:layout_alignTop="@id/btn_popac_windadd"
+        android:layout_marginLeft="11dp"
+        android:layout_toRightOf="@id/btn_popac_windadd"
+        android:background="@drawable/img_popac_zc1"
+        android:onClick="btnWindzc"
+        />
+
+    <Button
+        android:id="@+id/btn_popac_xc"
+        android:layout_width="83dp"
+        android:layout_height="62dp"
+        android:layout_alignTop="@id/btn_popac_windadd"
+        android:layout_marginLeft="11dp"
+        android:layout_toRightOf="@id/btn_popac_zc"
+        android:background="@drawable/img_popac_xc1"
+        android:onClick="btnWindxc"
+        />
+
+    <Button
+        android:id="@+id/btn_popac_sc"
+        android:layout_width="83dp"
+        android:layout_height="62dp"
+        android:layout_alignTop="@id/btn_popac_windadd"
+        android:layout_marginLeft="11dp"
+        android:layout_toRightOf="@id/btn_popac_xc"
+        android:background="@drawable/img_popac_sc1"
+        android:onClick="btnWindsc"
+        />
+
+    <Button
+        android:id="@+id/btn_popac_tempadd"
+        android:layout_width="83dp"
+        android:layout_height="54dp"
+        android:layout_alignTop="@id/btn_popac_windadd"
+        android:layout_marginLeft="11dp"
+        android:layout_toRightOf="@id/btn_popac_sc"
+        android:background="@drawable/img_popac_tempadd"
+        android:onClick="btnMainLacadd"
+        />
+
+    <Button
+        android:id="@+id/btn_popac_wind"
+        android:layout_width="83dp"
+        android:layout_height="72dp"
+        android:layout_alignBaseline="@+id/btn_popac_qfd"
+        android:layout_alignBottom="@+id/btn_popac_qfd"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="9dp"
+        android:layout_toStartOf="@+id/btn_popac_zc"
+        android:background="@drawable/img_popac_wind3"/>
+
+    <Button
+        android:id="@+id/btn_popac_qfd"
+        android:layout_width="83dp"
+        android:layout_height="62dp"
+        android:layout_alignLeft="@id/btn_popac_zc"
+        android:layout_below="@id/btn_popac_zc"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/img_popac_qfd1"
+        android:onClick="btnMainQfd"
+        />
+
+    <Button
+        android:id="@+id/btn_popac_hfd"
+        android:layout_width="83dp"
+        android:layout_height="62dp"
+        android:layout_alignLeft="@id/btn_popac_xc"
+        android:layout_below="@id/btn_popac_zc"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/img_popac_hfd1"
+        android:onClick="btnMainHfd"
+        />
+
+    <Button
+        android:id="@+id/btn_popac_xh"
+        android:layout_width="83dp"
+        android:layout_height="62dp"
+        android:layout_alignLeft="@id/btn_popac_sc"
+        android:layout_below="@id/btn_popac_zc"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/img_popac_nxh2"
+        android:onClick="btnMainXh"
+        />
+
+    <TextView
+        android:id="@+id/tv_popac_temp"
+        android:layout_width="83dp"
+        android:layout_height="72dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/btn_popac_windadd"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="9dp"
+        android:background="@drawable/bg_popac_tempbg"
+        android:gravity="center_vertical|right"
+        android:paddingRight="32dp"
+        android:text="28.5"
+        android:textColor="#1569a7"
+        android:textSize="50sp"
+        />
+
+    <Button
+        android:id="@+id/btn_popac_windsub"
+        android:layout_width="83dp"
+        android:layout_height="54dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/btn_popac_wind"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="9dp"
+        android:background="@drawable/img_popac_windsub"
+        android:onClick="btnWindSub"
+        />
+
+    <Button
+        android:id="@+id/btn_popac_ac"
+        android:layout_width="131dp"
+        android:layout_height="54dp"
+        android:layout_alignTop="@id/btn_popac_windsub"
+        android:layout_marginLeft="11dp"
+        android:layout_toRightOf="@id/btn_popac_windsub"
+        android:background="@drawable/img_popac_ac1"
+        android:onClick="PopacAC"
+        />
+
+    <Button
+        android:id="@+id/btn_popac_auto"
+        android:layout_width="131dp"
+        android:layout_height="54dp"
+        android:layout_alignTop="@id/btn_popac_windsub"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/btn_popac_ac"
+        android:background="@drawable/img_popac_auto1"
+        android:onClick="PopacAuto"
+        />
+
+    <Button
+        android:id="@+id/btn_popac_tempsub"
+        android:layout_width="83dp"
+        android:layout_height="54dp"
+        android:layout_alignTop="@id/btn_popac_windsub"
+        android:layout_marginLeft="11dp"
+        android:layout_toRightOf="@id/btn_popac_auto"
+        android:background="@drawable/img_popac_tempsub"
+        android:onClick="btnMainLacsub"
+        />
+</RelativeLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/bg_set_main"
+              android:orientation="horizontal">
+
+
+    <RadioGroup
+        android:id="@+id/rg_set"
+        android:layout_width="167dp"
+        android:layout_height="620dp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rb_set_routine"
+            style="@style/set_navigation"
+            android:text="常规"/>
+
+        <RadioButton
+            android:id="@+id/rb_set_vol"
+            style="@style/set_navigation"
+            android:text="音效"/>
+
+        <RadioButton
+            android:id="@+id/rb_set_wifi"
+            style="@style/set_navigation"
+            android:text="WIFI热点"/>
+
+        <!--<RadioButton-->
+            <!--android:id="@+id/rb_set_offlinemap"-->
+            <!--style="@style/set_navigation"-->
+            <!--android:text="离线地图"/>-->
+
+        <RadioButton
+            android:id="@+id/rb_set_moni"
+            style="@style/set_navigation"
+            android:text="视频监控"/>
+
+        <RadioButton
+            android:id="@+id/rb_set_manage"
+            style="@style/set_navigation"
+            android:text="运营管理"/>
+
+        <RadioButton
+            android:id="@+id/rb_set_ad"
+            style="@style/set_navigation"
+            android:text="广告"/>
+
+        <RadioButton
+            android:id="@+id/rb_set_cloud"
+            style="@style/set_navigation"
+            android:text="云诊断"/>
+
+        <RadioButton
+            android:id="@+id/rb_set_about"
+            style="@style/set_navigation"
+            android:text="关于"/>
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/fragment_set"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+    </LinearLayout>
+
+</LinearLayout>

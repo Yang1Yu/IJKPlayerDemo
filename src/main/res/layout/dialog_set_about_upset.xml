@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="230dp"
+    android:background="@null" >
+
+    <TextView
+        android:id="@+id/tv_dialog_set_about_upset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="118dp"
+        android:layout_marginTop="30dp"
+        android:text="确认恢复出厂设置 ?"
+        android:textColor="#111"
+        android:textSize="35sp" />
+
+    <TextView
+        android:id="@+id/tv_dialog_set_about_upset_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_dialog_set_about_upset"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="※ 一旦恢复，无法撤销"
+        android:textColor="#111"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn_dialog_set_about_upset_yes"
+        style="@style/dialog_set_yes"
+        android:layout_below="@+id/tv_dialog_set_about_upset_hint" />
+
+    <Button
+        android:id="@+id/btn_dialog_set_about_upset_no"
+        style="@style/dialog_set_server_no"
+        android:layout_alignTop="@+id/btn_dialog_set_about_upset_yes"
+        android:layout_toRightOf="@+id/btn_dialog_set_about_upset_yes" />
+
+</RelativeLayout>

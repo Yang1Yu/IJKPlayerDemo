@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="416dp"
+        android:layout_height="320dp"
+        android:background="@drawable/bg_bt_callin" >
+
+        <!--
+             <ImageView
+            android:id="@+id/iv_bt_callin_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:src="@drawable/img_bt_callin_head" />
+        -->
+
+        <TextView
+            android:id="@+id/tv_bt_callin_number"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="176dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="#111"
+            android:textSize="45sp"
+            android:typeface="serif" />
+
+        <Button
+            android:id="@+id/btn_bt_callin_answer"
+            android:layout_width="160dp"
+            android:layout_height="64dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="32dp"
+            android:background="@drawable/img_bt_callin_answer" />
+
+        <Button
+            android:id="@+id/btn_bt_callin_cut"
+            android:layout_width="160dp"
+            android:layout_height="64dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="32dp"
+            android:background="@drawable/img_bt_callin_cut" />
+    </RelativeLayout>
+
+</LinearLayout>

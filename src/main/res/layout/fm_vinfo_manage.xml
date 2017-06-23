@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RadioGroup
+        android:id="@+id/rg_vehicleinfo_err"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:layout_marginLeft="15dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_vehicleinfo_err_register"
+            style="@style/vehicle_child_navi"
+            android:text="注册信息"
+            />
+
+        <RadioButton
+            android:id="@+id/rb_vehicleinfo_err_communication"
+            style="@style/vehicle_child_navi"
+            android:text="通信号码"
+            />
+
+        <RadioButton
+            android:id="@+id/rb_vehicleinfo_err_firstserver"
+            style="@style/vehicle_child_navi"
+            android:text="第一服务器"
+            />
+
+        <RadioButton
+            android:id="@+id/rb_vehicleinfo_err_secondserver"
+            style="@style/vehicle_child_navi"
+            android:text="第二服务器"
+            />
+
+        <RadioButton
+            android:id="@+id/rb_vehicleinfo_err_location"
+            style="@style/vehicle_child_navi"
+            android:text="定位模式"
+            />
+    </RadioGroup>
+    <LinearLayout
+        android:id="@+id/fragment_vehicleinfo_err"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></LinearLayout>
+
+</LinearLayout>

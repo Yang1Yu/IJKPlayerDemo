@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/iv_popbtopen_bg"
+        android:layout_width="400dp"
+        android:layout_height="280dp"
+        android:layout_centerInParent="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_bt_no" />
+
+    <TextView
+        android:id="@+id/tv_popbtopen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="344dp"
+        android:text="&apos;autohejia&apos;开放时间"
+        android:textColor="#111"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/tv_popbtopen_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_popbtopen"
+        android:layout_centerHorizontal="true"
+        android:text="120s"
+        android:textColor="#111"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btn_popbtopen_cancel"
+        android:layout_width="304dp"
+        android:layout_height="44dp"
+        android:layout_alignBottom="@+id/iv_popbtopen_bg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/img_bt_no_frame"
+        android:gravity="center"
+        android:text="取消"
+        android:textColor="#111"
+        android:textSize="20sp"
+        android:visibility="visible" />
+
+</RelativeLayout>

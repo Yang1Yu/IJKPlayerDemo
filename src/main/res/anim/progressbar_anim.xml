@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<animation-list
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:oneshot="false"> 
+  <item
+    android:duration="80"
+    android:drawable="@drawable/pogress0" /> 
+  <item
+    android:duration="80"
+    android:drawable="@drawable/pogress1" /> 
+  <item
+    android:duration="80"
+    android:drawable="@drawable/pogress2" /> 
+  <item
+    android:duration="80"
+    android:drawable="@drawable/pogress3" /> 
+  <item
+    android:duration="80"
+    android:drawable="@drawable/pogress4" /> 
+  <item
+    android:duration="80"
+    android:drawable="@drawable/pogress5" /> 
+  <item
+    android:duration="80"
+    android:drawable="@drawable/pogress6" /> 
+      <item
+    android:duration="80"
+    android:drawable="@drawable/pogress7" /> 
+  <item
+    android:duration="80"
+    android:drawable="@drawable/pogress8" /> 
+  <item
+    android:duration="80"
+    android:drawable="@drawable/pogress9" /> 
+  <item
+    android:duration="80"
+    android:drawable="@drawable/pogress10" /> 
+  <item
+    android:duration="80"
+    android:drawable="@drawable/pogress11" /> 
+  <item
+    android:duration="80"
+    android:drawable="@drawable/pogress12" /> 
+</animation-list>

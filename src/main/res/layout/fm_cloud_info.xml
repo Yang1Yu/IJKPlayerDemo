@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_cloud_info_main"
+    android:orientation="horizontal">
+
+
+    <RadioGroup
+        android:id="@+id/rg_cloud_info"
+        android:layout_width="180dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rb_cloud_info_01"
+            style="@style/cloud_info_navigation"
+            android:text="整车控制器" />
+
+        <RadioButton
+            android:id="@+id/rb_cloud_info_02"
+            style="@style/cloud_info_navigation"
+            android:text="电机控制器" />
+
+
+        <RadioButton
+            android:id="@+id/rb_cloud_info_03"
+            style="@style/cloud_info_navigation"
+            android:text="电池管理系统" />
+
+        <RadioButton
+            android:id="@+id/rb_cloud_info_04"
+            style="@style/cloud_info_navigation"
+            android:text="仪表信息" />
+
+        <RadioButton
+            android:id="@+id/rb_cloud_info_05"
+            style="@style/cloud_info_navigation"
+            android:text="DC/AC" />
+
+        <RadioButton
+            android:id="@+id/rb_cloud_info_06"
+            style="@style/cloud_info_navigation"
+            android:text="高压配电箱" />
+
+        <RadioButton
+            android:id="@+id/rb_cloud_info_07"
+            style="@style/cloud_info_navigation"
+            android:text="充电机" />
+
+        <RadioButton
+            android:id="@+id/rb_cloud_info_08"
+            style="@style/cloud_info_navigation"
+            android:text="车身CAN" />
+    </RadioGroup>
+
+
+    <LinearLayout
+        android:id="@+id/fragment_cloud_info"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"/>
+</LinearLayout>

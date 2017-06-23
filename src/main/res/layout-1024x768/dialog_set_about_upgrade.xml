@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="@null" >
+
+   <TextView 
+       android:id="@+id/tv_dialog_set_about_upgrade"
+       android:text=""
+       />
+
+    <Button
+        android:id="@+id/btn_dialog_set_about_yes"
+        style="@style/dialog_set_yes"
+        android:layout_below="@+id/tv_dialog_set_about_upgrade" />
+
+    <Button
+        android:id="@+id/btn_dialog_set_about_no"
+        style="@style/dialog_set_server_no"
+        android:layout_alignTop="@+id/btn_dialog_set_about_yes"
+        android:layout_toRightOf="@+id/btn_dialog_set_about_yes" />
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="240dp"
+        android:background="@drawable/bg_dialog_set_main"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_pop_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="64dp"
+            android:text="请确认 清 空 列 表"
+            android:textColor="#000000"
+            android:textSize="30sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="56dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/bt_media_pop_ok"
+                android:layout_width="160dp"
+                android:layout_height="56dp"
+                android:background="@drawable/img_set_yes" />
+
+            <Button
+                android:id="@+id/bt_media_pop_no"
+                android:layout_width="160dp"
+                android:layout_height="56dp"
+                android:layout_marginLeft="4dp"
+                android:background="@drawable/img_set_no" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

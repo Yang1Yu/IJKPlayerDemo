@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pv="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/tv_set_moni_switch_monitor"
+        style="@style/set_detail"
+        android:text="启用" />
+
+    <ImageView
+        android:id="@+id/iv_set_moni_line1"
+        style="@style/set_right_line"
+        android:layout_below="@+id/tv_set_moni_switch_monitor" />
+
+    <TextView
+        android:id="@+id/tv_set_moni_px"
+        style="@style/set_detail"
+        android:layout_below="@+id/iv_set_moni_line1"
+        android:text="分辨率" />
+
+    <ImageView
+        android:id="@+id/iv_set_moni_line2"
+        style="@style/set_right_line"
+        android:layout_below="@+id/tv_set_moni_px" />
+
+    <TextView
+        android:id="@+id/tv_set_moni_quality"
+        style="@style/set_detail"
+        android:layout_below="@+id/iv_set_moni_line2"
+        android:text="质量" />
+
+    <ImageView
+        android:id="@+id/iv_set_moni_line3"
+        style="@style/set_right_line"
+        android:layout_below="@+id/tv_set_moni_quality" />
+
+    <TextView
+        android:id="@+id/tv_set_moni_video"
+        style="@style/set_detail"
+        android:layout_below="@+id/iv_set_moni_line3"
+        android:text="录像" />
+
+    <ImageView
+        android:id="@+id/iv_set_moni_line4"
+        style="@style/set_right_line"
+        android:layout_below="@+id/tv_set_moni_video" />
+
+    <TextView
+        android:id="@+id/tv_set_moni_passage"
+        style="@style/set_detail"
+        android:layout_below="@+id/iv_set_moni_line4"
+        android:text="通道选择" />
+
+    <ImageView
+        android:id="@+id/iv_set_moni_line5"
+        style="@style/set_right_line"
+        android:layout_below="@+id/tv_set_moni_passage" />
+
+    <com.hejia.myview.SwitchButton
+        android:id="@+id/switch_set_moni_monitor"
+        style="@style/set_switchbutton"
+        android:track="@drawable/switch_set_track"
+        pv:mask="@drawable/switch_set_mask" />
+
+    <com.hejia.myview.SwitchButton
+        android:id="@+id/switch_set_moni_video"
+        style="@style/set_switchbutton"
+        android:layout_below="@+id/iv_set_moni_line3"
+        android:track="@drawable/switch_set_track"
+        pv:mask="@drawable/switch_set_mask" />
+
+</RelativeLayout>

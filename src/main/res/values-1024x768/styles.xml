@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppBaseTheme" parent="android:Theme.Light"></style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="applicationTheme" parent="@android:style/Theme.Holo.Light">
+        <item name="android:dropDownListViewStyle">@style/mySpinnerStyle</item>
+        <item name="android:windowBackground">@android:color/black</item>
+        <item name="android:windowIsTranslucent">false</item>
+    </style>
+
+    <style name="mySpinnerStyle" parent="android:style/Widget.ListView.DropDown">
+        <item name="android:divider">#555</item>
+        <item name="android:dividerHeight">0dp</item>
+    </style>
+
+    <style name="MyDialog" parent="@android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/bg_bt_no</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="Theme.picker" parent="android:Theme.Holo.Dialog">
+        <item name="android:editTextStyle">@style/Widget.EditText.White</item>
+    </style>
+
+    <style name="Widget.EditText.White" parent="@android:style/Widget.EditText">
+        <item name="android:textColor">#111</item>
+    </style>
+    <!-- 空调弹出及消失动画 -->
+    <style name="mypopwindow_anim_style">
+        <item name="android:windowEnterAnimation">@anim/popshow_anim</item>
+        <!-- 指定显示的动画xml -->
+
+        <item name="android:windowExitAnimation">@anim/pophidden_anim</item>
+        <!-- 指定消失的动画xml -->
+    </style>
+    <!-- 主界面导航栏 -->
+    <style name="radio_button_style">
+        <item name="android:layout_height">96dp</item>
+        <item name="android:layout_width">96dp</item>
+        <item name="android:button">@null</item>
+    </style>
+    <!-- 主界面下方语音识别等 -->
+    <style name="ibtn_main_bottom">
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_width">52dp</item>
+        <item name="android:scaleType">center</item>
+    </style>
+    <!-- 主界面下方温度控制 -->
+    <style name="btn_main_bottom_ac">
+        <item name="android:layout_height">32dp</item>
+        <item name="android:layout_width">60dp</item>
+    </style>
+    <!-- 主界面下方空调pop -->
+    <style name="btn_main_bottom_popac">
+        <item name="android:layout_height">24dp</item>
+        <item name="android:layout_width">24dp</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_marginTop">16dp</item>
+    </style>
+    <!-- 主界面下方空调 -->
+    <style name="btn_main_bottom_actwo">
+        <item name="android:layout_height">28dp</item>
+        <item name="android:layout_width">32dp</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+    <!-- 空调界面按键 -->
+    <style name="btn_popac">
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_width">76dp</item>
+    </style>
+    <!--云诊断界面导航栏-->
+    <style name="cloud_navigation">
+        <item name="android:layout_height">44dp</item>
+        <item name="android:layout_width">128dp</item>
+    </style>
+    <!--云诊断车辆信息界面导航栏-->
+    <style name="cloud_info_navigation">
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@drawable/textcolor_cloud</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/bg_cloud_info_tb</item>
+        <item name="android:button">@null</item>
+        <item name="android:typeface">serif</item>
+    </style>
+    <!--云诊断车身控制界面按键-->
+    <style name="bg_btn_cloud_control">
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_width">116dp</item>
+    </style>
+    <!--云诊断车身控制界面文本框-->
+    <style name="bg_tv_cloud_control">
+        <item name="android:layout_height">24dp</item>
+        <item name="android:layout_width">116dp</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!-- 蓝牙界面导航栏 -->
+    <style name="rb_bt">
+        <item name="android:layout_height">62dp</item>
+        <item name="android:layout_width">128dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">20dp</item>
+    </style>
+    <!-- 蓝牙拨号界面键盘 -->
+    <style name="btn_bt_dial">
+        <item name="android:layout_height">63dp</item>
+        <item name="android:layout_width">124dp</item>
+        <item name="android:layout_marginLeft">30dp</item>
+    </style>
+    <!-- 蓝牙拨号界面键盘基准位置键 -->
+    <style name="btn_bt_dial_base">
+        <item name="android:layout_height">63dp</item>
+        <item name="android:layout_width">124dp</item>
+        <item name="android:layout_marginLeft">82dp</item>
+        <item name="android:layout_marginBottom">27dp</item>
+    </style>
+    <!-- 蓝牙音乐界面进度条 -->
+    <style name="pbar_bt_music" parent="android:Widget.ProgressBar.Horizontal">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/progressbar_bt_music</item>
+        <item name="android:minHeight">5dip</item>
+        <item name="android:maxHeight">5dip</item>
+            
+    </style>
+    <!-- 设置界面导航栏 -->
+    <style name="set_navigation">
+        <item name="android:layout_height">56dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/bg_set_navi</item>
+        <item name="android:button">@null</item>
+    </style>
+    <!-- 设置界面详细信息 -->
+    <style name="set_detail">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">70dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:paddingLeft">24dp</item>
+        <item name="android:textColor">#fff</item>
+    </style>
+    <!-- 设置界面右分割线 -->
+    <style name="set_right_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_marginTop">1dp</item>
+        <item name="android:layout_marginBottom">1dp</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:src">@drawable/img_set_rline</item>
+    </style>
+    <!-- 设置_音量及音效_音色按键 -->
+    <style name="set_tone">
+        <item name="android:layout_width">116dp</item>
+        <item name="android:layout_height">64dp</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!-- 设置界面switchbutton -->
+    <style name="set_switchbutton">
+        <item name="android:layout_width">72dp</item>
+        <item name="android:layout_height">32dp</item>
+        <item name="android:layout_marginRight">33dp</item>
+        <item name="android:layout_marginTop">18dp</item>
+        <item name="android:thumb">@drawable/switch_set_thumb</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+    <!-- 设置_关于_详细 -->
+    <style name="set_about_detail">
+        <item name="android:layout_width">160dp</item>
+        <item name="android:layout_height">70dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:paddingRight">24dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:textColor">#fff</item>
+    </style>
+    <!-- 多媒体音乐界面进度条 -->
+    <style name="media_music_music" parent="android:Widget.ProgressBar.Horizontal">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/progressbar_media_music</item>
+    </style>
+    <!-- 收音机界面进度条 -->
+    <style name="radio_pinlv" parent="android:Widget.ProgressBar.Horizontal">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/progressbar_radio_seekbar</item>
+            
+    </style>
+    <!-- 收音机界面频道按键 -->
+    <style name="btn_radio">
+        <item name="android:layout_width">184dp</item>
+        <item name="android:layout_height">64dp</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">@color/text_radio</item>
+    </style>
+    <!--收音机界面seekbar上方数字-->
+    <style name="tvRadioNumber">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">25sp</item>
+    </style>
+    <!-- 设置界面对话框详细 -->
+    <style name="set_dialog_detail">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">56dp</item>
+        <item name="android:textColor">#111</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="iv_set_dialog_detail">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:visibility">invisible</item>
+        <item name="android:src">@drawable/checkbox1_selected</item>
+    </style>
+
+    <style name="dialog_set_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:src">@drawable/img_bt_line</item>
+    </style>
+
+    <style name="dialog_set_rb">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:background">@drawable/bg_set_dialog_rb</item>
+        <item name="android:textColor">#111</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:button">@null</item>
+    </style>
+
+    <style name="dialog_set_rg">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="dialog_set_yes">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">24dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:background">@drawable/img_set_yes</item>
+        <item name="android:layout_alignParentLeft">true</item>
+    </style>
+
+    <style name="dialog_set_no">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/img_set_no</item>
+        <item name="android:layout_marginLeft">20dp</item>
+    </style>
+
+    <style name="dialog_set_server_no">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/img_set_no</item>
+        <item name="android:layout_marginRight">28dp</item>
+    </style>
+    <!-- 云诊断驾驶技术评价进度条 -->
+    <style name="pbar_cloud_evaluate" parent="android:Widget.ProgressBar.Horizontal">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/progressbar_cloud_evaluate</item>
+        <item name="android:minHeight">5dip</item>
+        <item name="android:maxHeight">5dip</item>
+            
+    </style>
+    <!--10寸屏车辆诊断界面导航栏-->
+    <style name="vehicle_navi">
+        <item name="android:layout_height">71dp</item>
+        <item name="android:layout_width">167dp</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:paddingLeft">80dp</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <!--10寸屏车辆诊断子界面导航栏-->
+    <style name="vehicle_child_navi">
+        <item name="android:layout_height">54dp</item>
+        <item name="android:layout_width">112dp</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_marginLeft">2dp</item>
+        <item name="android:background">@drawable/img_vinfo_childnavibg</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- 语音识别对话框 -->
+    <style name="iat_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <!-- <item name="android:windowIsTranslucent">true</item> -->
+        <!--  <item name="android:backgroundDimEnabled">true</item> -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+</resources>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="210dp"
+    android:background="@null" >
+
+    <RadioGroup
+        android:id="@+id/rg_dialog_set_moni_px"
+        style="@style/dialog_set_rg" >
+
+        <RadioButton
+            android:id="@+id/rb_dialog_set_moni_d1"
+            style="@style/dialog_set_rb"
+            android:text="D1" />
+
+        <ImageView
+            android:id="@+id/iv_dialog_set_moni_line1"
+            style="@style/dialog_set_line" />
+
+        <RadioButton
+            android:id="@+id/rb_dialog_set_moni_720p"
+            style="@style/dialog_set_rb"
+            android:text="720P" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_dialog_set_moni_px_yes"
+        style="@style/dialog_set_yes"
+        android:layout_below="@+id/rg_dialog_set_moni_px" />
+
+    <Button
+        android:id="@+id/btn_dialog_set_moni_px_no"
+        style="@style/dialog_set_no"
+        android:layout_alignTop="@+id/btn_dialog_set_moni_px_yes"
+        android:layout_toRightOf="@+id/btn_dialog_set_moni_px_yes" />
+
+</RelativeLayout>

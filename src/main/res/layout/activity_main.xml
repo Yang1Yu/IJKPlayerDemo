@@ -1,0 +1,216 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/ll_main"
+                android:layout_width="960dp"
+                android:layout_height="1280dp"
+                android:background="@drawable/bg_main"
+                tools:context=".MainActivity">
+
+    <SurfaceView
+        android:id="@+id/sview_main"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+    <ImageView
+        android:id="@+id/iv_main_topsignal"
+        android:layout_width="38dp"
+        android:layout_height="23dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="26dp"
+        android:layout_marginTop="4dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_main_topsignal"/>
+
+    <ImageView
+        android:id="@+id/iv_main_topbt"
+        android:layout_width="24dp"
+        android:layout_height="23dp"
+        android:layout_alignTop="@id/iv_main_topsignal"
+        android:layout_toLeftOf="@id/iv_main_topsignal"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_main_topbt"/>
+
+    <ImageView
+        android:id="@+id/iv_main_topwifi"
+        android:layout_width="24dp"
+        android:layout_height="23dp"
+        android:layout_alignTop="@id/iv_main_topsignal"
+        android:layout_toLeftOf="@id/iv_main_topbt"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_main_topwifi"/>
+
+
+    <RadioGroup
+        android:id="@+id/rg_main"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_below="@id/iv_main_topsignal"
+        android:layout_marginTop="19dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_main_cloud"
+            style="@style/radio_button_style"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/img_main_cloud"
+            />
+
+        <RadioButton
+            android:id="@+id/rb_main_moni"
+            style="@style/radio_button_style"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/img_main_moni"
+            />
+
+        <RadioButton
+            android:id="@+id/rb_main_carlife"
+            style="@style/radio_button_style"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/img_main_carlife"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/rb_main_media"
+            style="@style/radio_button_style"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/img_main_media"
+            />
+
+        <RadioButton
+            android:id="@+id/rb_main_radio"
+            style="@style/radio_button_style"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/img_main_radio"
+            />
+
+
+        <RadioButton
+            android:id="@+id/rb_main_bt"
+            style="@style/radio_button_style"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/img_main_bt"
+            />
+
+        <RadioButton
+            android:id="@+id/rb_main_set"
+            style="@style/radio_button_style"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/img_main_set"
+            />
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/fragment_main"
+        android:layout_width="match_parent"
+        android:layout_height="972dp"
+        android:layout_below="@id/rg_main"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        >
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="138dp"
+        android:layout_below="@id/fragment_main">
+
+
+        <ImageView
+            android:id="@+id/iv_main_bottom_left"
+            android:layout_width="356dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="510dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/bg_main_bottom_left"/>
+
+        <Button
+            android:id="@+id/btn_main_bottom_speak"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:layout_marginLeft="832dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/img_main_speak"/>
+
+
+        <Button
+            android:id="@+id/btn_main_bottom_switchbutton"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:layout_marginLeft="417dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/img_main_bottom_switchbutton"/>
+
+
+        <ImageView
+            android:id="@+id/iv_main_bottom_voice"
+            android:layout_width="356dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="95dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/bg_main_voice"/>
+
+
+        <Button
+            android:id="@+id/btn_main_bottom_voicesub"
+            android:layout_width="148dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:onClick="voiceSub"
+            />
+
+        <TextView
+            android:id="@+id/tv_main_bottom_voice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="40dp"
+            android:textColor="#fff"
+            android:textSize="50sp"/>
+
+        <Button
+            android:id="@+id/btn_main_bottom_voiceadd"
+            android:layout_width="148dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="268dp"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:onClick="voiceAdd"
+            />
+
+
+        <Button
+            android:id="@+id/btn_main_bottom_mute"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/img_main_mute"
+            android:onClick="voiceMute"/>
+
+        <Button
+            android:id="@+id/btn_main_bottom_cancelmute"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/img_main_cancelmute"
+            android:onClick="voiceCancelMute"
+            />
+
+        <TextView
+            android:id="@+id/tv_main_bottom_time"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="540dp"
+            android:layout_marginTop="35dp"
+            android:gravity="center_horizontal"
+            android:textColor="#fff"
+            android:textSize="70sp"/>
+
+    </FrameLayout>
+
+
+</RelativeLayout>

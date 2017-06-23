@@ -1,0 +1,98 @@
+<resources>
+    <string name="app_name">V3_1030</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="app_id">58475830</string>
+    <string formatted="false" name="tts_toast_format">缓冲进度为%d%%，播放进度为%d%%</string>
+
+
+    <string-array name="voicer_cloud_entries">
+        <item>小燕—女青、中英、普通话</item>
+        <item>小宇—男青、中英、普通话</item>
+    </string-array>
+
+    <string-array name="voicer_cloud_values">
+        <item>xiaoyan</item>
+        <item>xiaoyu</item>
+    </string-array>
+
+    <!-- 切换云诊断语音命令-->
+    <string-array name="cloud_mark">
+        <item>云</item>
+        <item>诊断</item>
+        <item>车辆</item>
+        <item>控制</item>
+    </string-array>
+
+    <!-- 切换手机互联语音命令-->
+    <string-array name="car_mark">
+        <item>互联</item>
+        <item>手机</item>
+        <item>机互</item>
+        <item>手机互联</item>
+    </string-array>
+
+    <!-- 切换导航语音命令-->
+    <string-array name="navi_mark">
+        <item>导航</item>
+        <item>地图</item>
+        <item>位置</item>
+        <item>定位</item>
+    </string-array>
+
+    <!-- 切换监控语音命令-->
+    <string-array name="moni_mark">
+        <item>监控</item>
+    </string-array>
+
+    <!-- 切换多媒体语音命令-->
+    <string-array name="media_mark">
+        <item>多媒体</item>
+        <item>音乐</item>
+        <item>视频</item>
+        <item>歌曲</item>
+    </string-array>
+
+    <!-- 切换收音机语音命令-->
+    <string-array name="radio_mark">
+        <item>收音机</item>
+
+    </string-array>
+
+    <!-- 收音机内部打开语音命令-->
+    <string-array name="radio_open_mark">
+        <item>开</item>
+        <item>收听</item>
+    </string-array>
+
+    <!-- 收音机内部关闭语音命令-->
+    <string-array name="radio_close_mark">
+        <item>关</item>
+        <item>闭</item>
+    </string-array>
+
+    <!-- 收音机内部调频语音命令-->
+    <string-array name="radio_setfreq_mark">
+        <item>调频</item>
+        <item>收听</item>
+    </string-array>
+
+    <!-- 收音机内部调频语音命令-->
+    <string-array name="radio_updata_mark">
+        <item>更新</item>
+    </string-array>
+
+    <!-- 切换蓝牙语音命令-->
+    <string-array name="bt_mark">
+        <item>蓝牙</item>
+        <item>电话</item>
+    </string-array>
+
+    <!-- 切换设置语音命令-->
+    <string-array name="set_mark">
+        <item>设置</item>
+    </string-array>
+
+
+
+</resources>

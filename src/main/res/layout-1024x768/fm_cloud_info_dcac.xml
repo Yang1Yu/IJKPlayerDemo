@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <FrameLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent">
+    	<LinearLayout 
+    	    android:id="@+id/ll_cloud_info_dcac"
+    	    android:layout_width="match_parent"
+    		android:layout_height="match_parent"
+    		android:layout_marginTop="48dp"> 
+    	</LinearLayout>
+    	<LinearLayout 
+    	    android:layout_width="match_parent"
+    		android:layout_height="match_parent"
+    		android:orientation="vertical"> 
+    		<RadioGroup
+		        android:id="@+id/rg_cloud_info_dcac"
+		        android:layout_width="wrap_content"
+		        android:layout_height="match_parent"
+		        android:orientation="horizontal">
+		        <RadioButton
+		            android:id="@+id/rb_cloud_info_dcac_01"
+		            android:layout_width="112dp"
+		            android:layout_height="35dp"
+		            android:layout_weight="1"
+		            android:background="@drawable/bg_cloud_info_battery"
+		            android:button="@null"
+		            android:checked="true"
+		            android:gravity="center"
+		            android:textColor="@drawable/textcolor_cloud"
+		            android:text="DCDC状态"
+		            android:textSize="18sp" />
+		        <RadioButton
+		            android:id="@+id/rb_cloud_info_dcac_02"
+		            android:layout_width="112dp"
+		            android:layout_height="35dp"
+		            android:layout_weight="1"
+		            android:background="@drawable/bg_cloud_info_battery"
+		            android:button="@null"
+		            android:gravity="center"
+		            android:text="油泵状态"
+		            android:textColor="@drawable/textcolor_cloud"
+		            android:textSize="18sp" />
+		   		<RadioButton
+		            android:id="@+id/rb_cloud_info_dcac_03"
+		            android:layout_width="112dp"
+		            android:layout_height="35dp"
+		            android:layout_weight="1"
+		            android:background="@drawable/bg_cloud_info_battery"
+		            android:button="@null"
+		            android:gravity="center"
+		            android:text="气泵状态"
+		            android:textColor="@drawable/textcolor_cloud"
+		            android:textSize="18sp" />
+		   </RadioGroup>
+    	</LinearLayout>
+
+        
+    </FrameLayout>
+    
+
+</LinearLayout>

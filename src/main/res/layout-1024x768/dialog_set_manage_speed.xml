@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="550dp"
+    android:background="@null" >
+
+    <RadioGroup
+        android:id="@+id/rg_dialog_set_manage_speed"
+        style="@style/dialog_set_rg" >
+
+        <RadioButton
+            android:id="@+id/rb_dialog_set_manage_speed_40"
+            style="@style/dialog_set_rb"
+            android:text="40Km/h" />
+
+        <ImageView
+            android:id="@+id/iv_dialog_set_manage_speed_line1"
+            style="@style/dialog_set_line" />
+
+        <RadioButton
+            android:id="@+id/rb_dialog_set_manage_speed_50"
+            style="@style/dialog_set_rb"
+            android:text="50Km/h" />
+
+        <ImageView
+            android:id="@+id/iv_dialog_set_manage_speed_line2"
+            style="@style/dialog_set_line" />
+
+        <RadioButton
+            android:id="@+id/rb_dialog_set_manage_speed_60"
+            style="@style/dialog_set_rb"
+            android:text="60Km/h" />
+
+        <ImageView
+            android:id="@+id/iv_dialog_set_manage_speed_line3"
+            style="@style/dialog_set_line" />
+
+        <RadioButton
+            android:id="@+id/rb_dialog_set_manage_speed_70"
+            style="@style/dialog_set_rb"
+            android:text="70Km/h" />
+
+        <ImageView
+            android:id="@+id/iv_dialog_set_manage_speed_line4"
+            style="@style/dialog_set_line" />
+
+        <RadioButton
+            android:id="@+id/rb_dialog_set_manage_speed_80"
+            style="@style/dialog_set_rb"
+            android:text="80Km/h" />
+
+        <ImageView
+            android:id="@+id/iv_dialog_set_manage_speed_line5"
+            style="@style/dialog_set_line" />
+
+        <RadioButton
+            android:id="@+id/rb_dialog_set_manage_speed_90"
+            style="@style/dialog_set_rb"
+            android:text="90Km/h" />
+
+        <ImageView
+            android:id="@+id/iv_dialog_set_manage_speed_line6"
+            style="@style/dialog_set_line" />
+
+        <RadioButton
+            android:id="@+id/rb_dialog_set_manage_speed_100"
+            style="@style/dialog_set_rb"
+            android:text="100Km/h" />
+
+        <ImageView
+            android:id="@+id/iv_dialog_set_manage_speed_line7"
+            style="@style/dialog_set_line" />
+
+        <RadioButton
+            android:id="@+id/rb_dialog_set_manage_speed_110"
+            style="@style/dialog_set_rb"
+            android:text="110Km/h" />
+
+        <ImageView
+            android:id="@+id/iv_dialog_set_manage_speed_line8"
+            style="@style/dialog_set_line" />
+
+        <RadioButton
+            android:id="@+id/rb_dialog_set_manage_speed_120"
+            style="@style/dialog_set_rb"
+            android:text="120Km/h" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_dialog_set_manage_speed_yes"
+        style="@style/dialog_set_yes"
+        android:layout_below="@+id/rg_dialog_set_manage_speed" />
+
+    <Button
+        android:id="@+id/btn_dialog_set_manage_speed_no"
+        style="@style/dialog_set_no"
+        android:layout_alignTop="@+id/btn_dialog_set_manage_speed_yes"
+        android:layout_toRightOf="@+id/btn_dialog_set_manage_speed_yes" />
+
+</RelativeLayout>

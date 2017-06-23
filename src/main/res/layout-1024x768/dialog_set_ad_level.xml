@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="@null" >
+
+    <RadioGroup
+        android:id="@+id/rg_dialog_set_ad_level"
+        style="@style/dialog_set_rg" >
+
+        <RadioButton
+            android:id="@+id/rb_dialog_set_ad_level_local"
+            style="@style/dialog_set_rb"
+            android:text="本地优先" />
+
+        <ImageView
+            android:id="@+id/iv_dialog_set_ad_level_line1"
+            style="@style/dialog_set_line" />
+
+        <RadioButton
+            android:id="@+id/rb_dialog_set_ad_level_network"
+            style="@style/dialog_set_rb"
+            android:text="网络优先" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_dialog_set_ad_level_yes"
+        style="@style/dialog_set_yes"
+        android:layout_below="@+id/rg_dialog_set_ad_level" />
+
+    <Button
+        android:id="@+id/btn_dialog_set_ad_level_no"
+        style="@style/dialog_set_no"
+        android:layout_alignTop="@+id/btn_dialog_set_ad_level_yes"
+        android:layout_toRightOf="@+id/btn_dialog_set_ad_level_yes" />
+
+</RelativeLayout>

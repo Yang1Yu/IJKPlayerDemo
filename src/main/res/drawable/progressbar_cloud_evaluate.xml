@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@android:id/background"
+        android:drawable="@drawable/img_cloud_evaluate_barbg"/>
+    <item android:id="@android:id/progress">
+        <scale
+            android:drawable="@drawable/img_cloud_evaluate_barpro"
+            android:scaleWidth="100%" />
+    </item>
+
+</layer-list>

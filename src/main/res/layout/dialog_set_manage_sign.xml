@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@null" >
+
+    <TextView
+        android:id="@+id/tv_dialog_set_manage_sign"
+        style="@style/set_dialog_detail"
+        android:layout_alignParentTop="true"
+        android:text="本车标志" />
+
+    <ImageView
+        android:id="@+id/iv_dialog_set_manage_line1"
+        style="@style/dialog_set_line"
+        android:layout_below="@+id/tv_dialog_set_manage_sign" />
+
+</RelativeLayout>

@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical" >
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+
+		<LinearLayout
+			android:layout_width="0dp"
+			android:layout_height="36dp"
+			android:layout_weight="1"
+			android:background="@drawable/bg_cloud_linearlayout"
+			android:gravity="center_vertical"
+			android:orientation="horizontal" >
+
+			<TextView
+				android:id="@+id/three_textView1_left"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="8dp"
+				android:text="电芯平均温度"
+				android:textSize="@dimen/size_cloud_battery" />
+
+			<TextView
+				android:id="@+id/three_tv_left_01"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="  "
+				android:textColor="@color/cloud_front_color"
+				android:layout_marginLeft="4dp"
+				android:textSize="@dimen/size_cloud_battery_no" />
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="8dp"
+				android:text="℃"
+				android:textSize="@dimen/size_cloud_battery" />
+		</LinearLayout>
+		<LinearLayout
+			android:layout_width="0dp"
+			android:layout_height="36dp"
+			android:layout_weight="1"
+			android:background="@drawable/bg_cloud_linearlayout"
+			android:gravity="center_vertical"
+			android:orientation="horizontal">
+			<TextView
+				android:id="@+id/three_textView1_right"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="8dp"
+				android:text="单体平台电压"
+				android:textSize="@dimen/size_cloud_battery" />
+
+			<TextView
+				android:id="@+id/three_tv_right_01"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="  "
+				android:textColor="@color/cloud_front_color"
+				android:layout_marginLeft="4dp"
+				android:textSize="@dimen/size_cloud_battery_no" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="8dp"
+				android:text="V"
+				android:textSize="@dimen/size_cloud_battery" />
+		</LinearLayout>
+
+	</LinearLayout>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+
+		<LinearLayout
+			android:layout_width="0dp"
+			android:layout_height="36dp"
+			android:layout_weight="1"
+			android:background="@drawable/bg_cloud_linearlayout"
+			android:gravity="center_vertical"
+			android:orientation="horizontal" >
+
+			<TextView
+				android:id="@+id/three_textView2_left"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="8dp"
+				android:text="单体最低电压"
+				android:textSize="@dimen/size_cloud_battery" />
+
+			<TextView
+				android:id="@+id/three_tv_left_02"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="  "
+				android:textColor="@color/cloud_front_color"
+				android:layout_marginLeft="4dp"
+				android:textSize="@dimen/size_cloud_battery_no" />
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="8dp"
+				android:text="V"
+				android:textSize="@dimen/size_cloud_battery" />
+		</LinearLayout>
+		<LinearLayout
+			android:layout_width="0dp"
+			android:layout_height="36dp"
+			android:layout_weight="1"
+			android:background="@drawable/bg_cloud_linearlayout"
+			android:gravity="center_vertical"
+			android:orientation="horizontal">
+			<TextView
+				android:id="@+id/three_textView2_right"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="8dp"
+				android:text="单体最高电压"
+				android:textSize="@dimen/size_cloud_battery" />
+
+			<TextView
+				android:id="@+id/three_tv_right_02"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="  "
+				android:textColor="@color/cloud_front_color"
+				android:layout_marginLeft="4dp"
+				android:textSize="@dimen/size_cloud_battery_no" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="8dp"
+				android:text="V"
+				android:textSize="@dimen/size_cloud_battery" />
+		</LinearLayout>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+
+		<LinearLayout
+			android:layout_width="0dp"
+			android:layout_height="36dp"
+			android:layout_weight="1"
+			android:background="@drawable/bg_cloud_linearlayout"
+			android:gravity="center_vertical"
+			android:orientation="horizontal" >
+
+			<TextView
+				android:id="@+id/three_textView3_left"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="8dp"
+				android:text="电芯最低温度"
+				android:textSize="@dimen/size_cloud_battery" />
+
+			<TextView
+				android:id="@+id/three_tv_left_03"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="  "
+				android:textColor="@color/cloud_front_color"
+				android:layout_marginLeft="4dp"
+				android:textSize="@dimen/size_cloud_battery_no" />
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="8dp"
+				android:text="℃"
+				android:textSize="@dimen/size_cloud_battery" />
+		</LinearLayout>
+		<LinearLayout
+			android:layout_width="0dp"
+			android:layout_height="36dp"
+			android:layout_weight="1"
+			android:background="@drawable/bg_cloud_linearlayout"
+			android:gravity="center_vertical"
+			android:orientation="horizontal">
+			<TextView
+				android:id="@+id/three_textView3_right"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="8dp"
+				android:text="电芯最高温度"
+				android:textSize="@dimen/size_cloud_battery" />
+
+			<TextView
+				android:id="@+id/three_tv_right_03"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="  "
+				android:textColor="@color/cloud_front_color"
+				android:layout_marginLeft="4dp"
+				android:textSize="@dimen/size_cloud_battery_no" />
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="8dp"
+				android:text="℃"
+				android:textSize="@dimen/size_cloud_battery" />
+		</LinearLayout>
+
+	</LinearLayout>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+
+		<LinearLayout
+			android:layout_width="0dp"
+			android:layout_height="36dp"
+			android:layout_weight="1"
+			android:background="@drawable/bg_cloud_linearlayout"
+			android:gravity="center_vertical"
+			android:orientation="horizontal" >
+
+			<TextView
+				android:id="@+id/three_textView4_left"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="8dp"
+				android:text="电芯最低电压"
+				android:textSize="@dimen/size_cloud_battery" />
+
+			<TextView
+				android:id="@+id/three_tv_left_04"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="  "
+				android:textColor="@color/cloud_front_color"
+				android:layout_marginLeft="4dp"
+				android:textSize="@dimen/size_cloud_battery_no" />
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="8dp"
+				android:text="mV"
+				android:textSize="@dimen/size_cloud_battery" />
+		</LinearLayout>
+		<LinearLayout
+			android:layout_width="0dp"
+			android:layout_height="36dp"
+			android:layout_weight="1"
+			android:background="@drawable/bg_cloud_linearlayout"
+			android:gravity="center_vertical"
+			android:orientation="horizontal">
+			<TextView
+				android:id="@+id/three_textView4_right"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="8dp"
+				android:text="电芯最高电压"
+				android:textSize="@dimen/size_cloud_battery" />
+
+			<TextView
+				android:id="@+id/three_tv_right_04"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="  "
+				android:textColor="@color/cloud_front_color"
+				android:layout_marginLeft="4dp"
+				android:textSize="@dimen/size_cloud_battery_no" />
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="8dp"
+				android:text="mV"
+				android:textSize="@dimen/size_cloud_battery" />
+		</LinearLayout>
+
+	</LinearLayout>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+
+
+		<LinearLayout
+			android:layout_width="0dp"
+			android:layout_height="36dp"
+			android:layout_weight="1"
+			android:background="@drawable/bg_cloud_linearlayout"
+			android:gravity="center_vertical"
+			android:orientation="horizontal" >
+
+			<TextView
+				android:id="@+id/three_textView9_left"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="8dp"
+				android:text="电芯平均电压"
+				android:textSize="@dimen/size_cloud_battery" />
+
+			<TextView
+				android:id="@+id/three_tv_left_09"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="  "
+				android:textColor="@color/cloud_front_color"
+				android:layout_marginLeft="4dp"
+				android:textSize="@dimen/size_cloud_battery_no"/>
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="8dp"
+				android:text="mV"
+				android:textSize="@dimen/size_cloud_battery" />
+
+		</LinearLayout>
+		<LinearLayout
+			android:layout_width="0dp"
+			android:layout_height="36dp"
+			android:layout_weight="1"
+			android:background="@drawable/bg_cloud_linearlayout"
+			android:gravity="center_vertical"
+			android:orientation="horizontal" >
+
+			<TextView
+				android:id="@+id/three_textView9_right"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="8dp"
+				android:text="均衡状态"
+				android:textSize="@dimen/size_cloud_battery" />
+
+			<TextView
+				android:id="@+id/three_tv_right_09"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="  "
+				android:textColor="@color/cloud_front_color"
+				android:layout_marginLeft="4dp"
+				android:textSize="@dimen/size_cloud_battery_no"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+
+		<LinearLayout
+			android:layout_width="0dp"
+			android:layout_height="36dp"
+			android:layout_weight="1"
+			android:background="@drawable/bg_cloud_linearlayout"
+			android:gravity="center_vertical"
+			android:orientation="horizontal" >
+
+			<TextView
+				android:id="@+id/three_textView5_left"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="8dp"
+				android:text="最低温度电芯所在CSC编号"
+				android:textSize="@dimen/size_cloud_battery" />
+
+			<TextView
+				android:id="@+id/three_tv_left_05"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="  "
+				android:textColor="@color/cloud_front_color"
+				android:layout_marginLeft="4dp"
+				android:textSize="@dimen/size_cloud_battery_no" />
+		</LinearLayout>
+		<LinearLayout
+			android:layout_width="0dp"
+			android:layout_height="36dp"
+			android:layout_weight="1"
+			android:background="@drawable/bg_cloud_linearlayout"
+			android:gravity="center_vertical"
+			android:orientation="horizontal">
+			<TextView
+				android:id="@+id/three_textView5_right"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="8dp"
+				android:text="最高温度电芯所在CSC编号"
+				android:textSize="@dimen/size_cloud_battery" />
+
+			<TextView
+				android:id="@+id/three_tv_right_05"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="  "
+				android:layout_marginLeft="4dp"
+				android:textColor="@color/cloud_front_color"
+				android:textSize="@dimen/size_cloud_battery_no"/>
+		</LinearLayout>
+
+	</LinearLayout>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+
+		<LinearLayout
+			android:layout_width="0dp"
+			android:layout_height="36dp"
+			android:layout_weight="1"
+			android:background="@drawable/bg_cloud_linearlayout"
+			android:gravity="center_vertical"
+			android:orientation="horizontal" >
+
+			<TextView
+				android:id="@+id/three_textView6_left"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="8dp"
+				android:text="最低温度电芯所在CSC内位置"
+				android:textSize="@dimen/size_cloud_battery" />
+
+			<TextView
+				android:id="@+id/three_tv_left_06"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="  "
+				android:textColor="@color/cloud_front_color"
+				android:layout_marginLeft="4dp"
+				android:textSize="@dimen/size_cloud_battery_no"/>
+		</LinearLayout>
+		<LinearLayout
+			android:layout_width="0dp"
+			android:layout_height="36dp"
+			android:layout_weight="1"
+			android:background="@drawable/bg_cloud_linearlayout"
+			android:gravity="center_vertical"
+			android:orientation="horizontal">
+			<TextView
+				android:id="@+id/three_textView6_right"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="8dp"
+				android:text="最高温度电芯所在CSC内位置"
+				android:textSize="@dimen/size_cloud_battery" />
+
+			<TextView
+				android:id="@+id/three_tv_right_06"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="  "
+				android:textColor="@color/cloud_front_color"
+				android:layout_marginLeft="4dp"
+				android:textSize="@dimen/size_cloud_battery_no" />
+		</LinearLayout>
+
+	</LinearLayout>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+
+		<LinearLayout
+			android:layout_width="0dp"
+			android:layout_height="36dp"
+			android:layout_weight="1"
+			android:background="@drawable/bg_cloud_linearlayout"
+			android:gravity="center_vertical"
+			android:orientation="horizontal" >
+
+			<TextView
+				android:id="@+id/three_textView7_left"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="8dp"
+				android:text="最低电压电芯所在CSC编号"
+				android:textSize="@dimen/size_cloud_battery" />
+
+			<TextView
+				android:id="@+id/three_tv_left_07"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="  "
+				android:textColor="@color/cloud_front_color"
+				android:layout_marginLeft="4dp"
+				android:textSize="@dimen/size_cloud_battery_no" />
+		</LinearLayout>
+		<LinearLayout
+			android:layout_width="0dp"
+			android:layout_height="36dp"
+			android:layout_weight="1"
+			android:background="@drawable/bg_cloud_linearlayout"
+			android:gravity="center_vertical"
+			android:orientation="horizontal">
+			<TextView
+				android:id="@+id/three_textView7_right"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="8dp"
+				android:text="最高电压电芯所在CSC编号"
+				android:textSize="@dimen/size_cloud_battery" />
+
+			<TextView
+				android:id="@+id/three_tv_right_07"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="  "
+				android:textColor="@color/cloud_front_color"
+				android:layout_marginLeft="4dp"
+				android:textSize="@dimen/size_cloud_battery_no" />
+		</LinearLayout>
+
+	</LinearLayout>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+
+		<LinearLayout
+			android:layout_width="0dp"
+			android:layout_height="36dp"
+			android:layout_weight="1"
+			android:background="@drawable/bg_cloud_linearlayout"
+			android:gravity="center_vertical"
+			android:orientation="horizontal" >
+
+			<TextView
+				android:id="@+id/three_textView8_left"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="8dp"
+				android:text="最低电压电芯所在CSC内位置"
+				android:textSize="@dimen/size_cloud_battery" />
+
+			<TextView
+				android:id="@+id/three_tv_left_08"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="  "
+				android:textColor="@color/cloud_front_color"
+				android:layout_marginLeft="4dp"
+				android:textSize="@dimen/size_cloud_battery_no"/>
+		</LinearLayout>
+		<LinearLayout
+			android:layout_width="0dp"
+			android:layout_height="36dp"
+			android:layout_weight="1"
+			android:background="@drawable/bg_cloud_linearlayout"
+			android:gravity="center_vertical"
+			android:orientation="horizontal">
+			<TextView
+				android:id="@+id/three_textView8_right"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="8dp"
+				android:text="最高电压电芯所在CSC内位置"
+				android:textSize="@dimen/size_cloud_battery"/>
+
+			<TextView
+				android:id="@+id/three_tv_right_08"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="  "
+				android:textColor="@color/cloud_front_color"
+				android:layout_marginLeft="4dp"
+				android:textSize="@dimen/size_cloud_battery_no" />
+		</LinearLayout>
+
+	</LinearLayout>
+
+
+</LinearLayout>

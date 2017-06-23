@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/tv_set_about_m_type"
+        style="@style/set_detail"
+        android:text="型号" />
+
+    <TextView
+        android:id="@+id/tv_set_about_type"
+        style="@style/set_about_detail"
+        android:text="TC-2016" />
+
+    <ImageView
+        android:id="@+id/iv_set_about_line1"
+        style="@style/set_right_line"
+        android:layout_below="@+id/tv_set_about_m_type" />
+
+    <TextView
+        android:id="@+id/tv_set_about_m_imei"
+        style="@style/set_detail"
+        android:layout_below="@+id/iv_set_about_line1"
+        android:text="IMEI码" />
+
+    <TextView
+        android:id="@+id/tv_set_about_imei"
+        style="@style/set_about_detail"
+        android:layout_below="@+id/iv_set_about_line1"
+        android:text="862073020078956" />
+
+    <ImageView
+        android:id="@+id/iv_set_about_line2"
+        style="@style/set_right_line"
+        android:layout_below="@+id/tv_set_about_m_imei" />
+
+    <TextView
+        android:id="@+id/tv_set_about_m_mac"
+        style="@style/set_detail"
+        android:layout_below="@+id/iv_set_about_line2"
+        android:text="MAC地址" />
+
+    <TextView
+        android:id="@+id/tv_set_about_mac"
+        style="@style/set_about_detail"
+        android:layout_below="@+id/iv_set_about_line2"
+        android:text="00:08:22:0a:ff:fb" />
+
+    <ImageView
+        android:id="@+id/iv_set_about_line3"
+        style="@style/set_right_line"
+        android:layout_below="@+id/tv_set_about_m_mac" />
+
+    <TextView
+        android:id="@+id/tv_set_about_m_version_system"
+        style="@style/set_detail"
+        android:layout_below="@+id/iv_set_about_line3"
+        android:text="系统版本" />
+
+    <TextView
+        android:id="@+id/tv_set_about_version_system"
+        style="@style/set_about_detail"
+        android:layout_below="@+id/iv_set_about_line3"
+        android:text="5.0.1" />
+
+    <ImageView
+        android:id="@+id/iv_set_about_line4"
+        style="@style/set_right_line"
+        android:layout_below="@+id/tv_set_about_m_version_system" />
+
+    <TextView
+        android:id="@+id/tv_set_about_m_version_kernel"
+        style="@style/set_detail"
+        android:layout_below="@+id/iv_set_about_line4"
+        android:text="内核版本" />
+
+    <TextView
+        android:id="@+id/tv_set_about_version_kernel"
+        style="@style/set_about_detail"
+        android:layout_below="@+id/iv_set_about_line4"
+        android:text="3.10.1" />
+
+    <ImageView
+        android:id="@+id/iv_set_about_line5"
+        style="@style/set_right_line"
+        android:layout_below="@+id/tv_set_about_m_version_kernel" />
+
+    <TextView
+        android:id="@+id/tv_set_about_m_version_cpu"
+        style="@style/set_detail"
+        android:layout_below="@+id/iv_set_about_line5"
+        android:text="硬件版本" />
+
+    <TextView
+        android:id="@+id/tv_set_about_version_cpu"
+        style="@style/set_about_detail"
+        android:layout_below="@+id/iv_set_about_line5"
+        android:text="1.0.0" />
+
+    <ImageView
+        android:id="@+id/iv_set_about_line6"
+        style="@style/set_right_line"
+        android:layout_below="@+id/tv_set_about_m_version_cpu" />
+
+    <TextView
+        android:id="@+id/tv_set_about_upgrade"
+        style="@style/set_detail"
+        android:layout_below="@+id/iv_set_about_line6"
+        android:clickable="true"
+        android:text="离线升级" />
+
+    <ImageView
+        android:id="@+id/iv_set_about_line7"
+        style="@style/set_right_line"
+        android:layout_below="@+id/tv_set_about_upgrade" />
+
+    <TextView
+        android:id="@+id/tv_set_about_upset"
+        style="@style/set_detail"
+        android:layout_below="@+id/iv_set_about_line7"
+        android:clickable="true"
+        android:text="恢复出厂设置" />
+
+    <ImageView
+        android:id="@+id/iv_set_about_line8"
+        style="@style/set_right_line"
+        android:layout_below="@+id/tv_set_about_upset" />
+
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 自定义switchbutton -->
+    <declare-styleable name="SwitchButton">
+        <attr name="android:layout_width" />
+        <attr name="android:layout_height" />
+        <attr name="mask" format="reference" />
+        <attr name="android:track" />
+        <attr name="android:thumb" />
+    </declare-styleable>
+
+</resources>

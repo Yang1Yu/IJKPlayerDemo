@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    >
+
+    <!--1 多媒体主页-->
+    <LinearLayout
+        android:id="@+id/ll_media_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+        <!--2 播放器-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="570dp">
+
+            <!--3 视音频播放-->
+            <RelativeLayout
+                android:visibility="visible"
+                android:id="@+id/rl_media_music_video"
+                android:layout_width="match_parent"
+                android:layout_height="570dp">
+
+                <!--4 音乐播放-->
+                <LinearLayout
+                    android:id="@+id/ll_media_music"
+                    android:layout_width="match_parent"
+                    android:layout_height="570dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <!--5 音乐中心图片-->
+                    <ImageView
+                        android:id="@+id/iv_music_center"
+                        android:layout_width="275dp"
+                        android:layout_height="273dp"
+                        android:layout_marginTop="35dp"
+                        android:background="@drawable/img_music_music" />
+                    <!--5 歌名-->
+                    <com.hejia.media.MyTextView
+                        android:id="@+id/tv_music_name"
+                        android:layout_width="340dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:ellipsize="marquee"
+                        android:gravity="center_horizontal"
+                        android:singleLine="true"
+                        android:text="无歌曲"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+                    <!--5 进度条-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="13dp"
+                        android:orientation="horizontal">
+                        <!--6 当前时间-->
+                        <TextView
+                            android:id="@+id/tv_now_time"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="40dp"
+                            android:gravity="right"
+                            android:singleLine="true"
+                            android:text="00:00 "
+                            android:textColor="#fff"
+                            android:textSize="20sp"/>
+                        <!--6 进度条-->
+                        <FrameLayout
+                            android:layout_width="678dp"
+                            android:layout_height="24dp"
+                            android:layout_marginLeft="15dp"
+                            android:gravity="center">
+                            <!--7 进度条背景图片-->
+                            <ImageView
+                                android:id="@+id/iv_music_seekbarbg"
+                                android:layout_width="650dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="14dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/bg_bt_music_bar"/>
+                            <!--7 进度条-->
+                            <SeekBar
+                                android:id="@+id/sb_music_seekbar"
+                                style="@style/media_music_music"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:thumb="@drawable/img_music_thumb"
+                                android:thumbOffset="0dip"/>
+                        </FrameLayout>
+                        <!--6 歌曲总时长-->
+                        <TextView
+                            android:id="@+id/tv_total_time"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:singleLine="true"
+                            android:textColor="#fff"
+                            android:textSize="20sp"/>
+                    </LinearLayout>
+                    <!--5 播放控制-->
+                    <LinearLayout
+                        android:id="@+id/rg_music_radiogroup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btn_music_last"
+                            android:layout_width="82dp"
+                            android:layout_height="83dp"
+                            android:background="@drawable/bg_music_last" />
+
+                        <Button
+                            android:id="@+id/btn_music_play"
+                            android:layout_width="82dp"
+                            android:layout_height="83dp"
+                            android:layout_marginLeft="66dp"
+                            android:background="@drawable/img_music_pause" />
+
+                        <Button
+                            android:id="@+id/btn_music_next"
+                            android:layout_width="82dp"
+                            android:layout_height="83dp"
+                            android:layout_marginLeft="66dp"
+                            android:background="@drawable/bg_music_next" />
+
+                        <Button
+                            android:id="@+id/btn_music_random"
+                            android:layout_width="82dp"
+                            android:layout_height="83dp"
+                            android:layout_marginLeft="66dp"
+                            android:background="@drawable/img_music_random1"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <!--4 ijkplayer-->
+                <tv.danmaku.ijk.media.widget.media.IjkVideoView
+                    android:id="@+id/ijk_meida_video"
+                    android:layout_width="match_parent"
+                    android:layout_height="570dp"
+                    android:layout_gravity="center"
+                    android:visibility="gone"/>
+
+            </RelativeLayout>
+
+            <!--3 图片播放器-->
+            <RelativeLayout
+                android:id="@+id/rl_media_pic_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_alignParentTop="true"
+                >
+                <!--4 图片名-->
+                <TextView
+                    android:id="@+id/tv_media_pic_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="图片名.jpg"
+                    android:textSize="20dp"
+                    android:textColor="#fff"
+                    android:background="@drawable/pic_media_picnamebg"
+                    android:paddingTop="24dp"
+                    android:paddingLeft="55dp"
+                    />
+                <!--4 图片播放-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="502dp"
+                    android:background="#000000"
+                    android:layout_below="@+id/ll_media_pic_name"
+                    >
+                    <!--5 图片播放的viewpager-->
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/vp_media_pic_big"
+                        android:layout_width="match_parent"
+                        android:layout_height="502dp"
+                        android:layout_below="@+id/ll_media_pic_name"
+                        android:clickable="true"
+                        />
+                    <!--5 无图片时显示的默认图片-->
+                    <ImageView
+                        android:id="@+id/iv_media_pic_picnull"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/pic_media_picnull"
+                        android:visibility="gone"/>
+                    <!--5 图片控制-->
+                    <LinearLayout
+                        android:id="@+id/ll_media_pic_control"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@drawable/pic_media_picbg"
+                        android:visibility="gone"
+                        android:orientation="horizontal">
+                        <!--6 图片左旋-->
+                        <ImageView
+                            android:id="@+id/iv_pic_rotateleft"
+                            android:layout_width="39dp"
+                            android:layout_height="43dp"
+                            android:src="@drawable/bg_pic_rolleft"
+                            android:layout_marginTop="14dp"
+                            android:layout_marginLeft="259dp"
+                            android:clickable="true"/>
+                        <!--6 图片播放暂停-->
+                        <ImageView
+                            android:id="@+id/iv_pic_start_pause"
+                            android:layout_width="39dp"
+                            android:layout_height="43dp"
+                            android:layout_marginTop="14dp"
+                            android:layout_marginLeft="162dp"
+                            android:src="@drawable/pic_media_start"
+                            android:clickable="true"/>
+                        <!--6 图片右旋-->
+                        <ImageView
+                            android:id="@+id/iv_pic_rotateright"
+                            android:layout_width="39dp"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="14dp"
+                            android:layout_marginLeft="162dp"
+                            android:background="@drawable/bg_pic_rolright"
+                            android:clickable="true"/>
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <!--2 视音频,图片切换-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="@drawable/img_media_background"
+            android:gravity="center_vertical|left"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_media_video"
+                android:layout_width="65dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="23dp"
+                android:background="@drawable/img_media_video1"/>
+
+            <Button
+                android:id="@+id/btn_media_pic"
+                android:layout_width="65dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="26dp"
+                android:background="@drawable/img_media_pic1"
+                android:visibility="visible"/>
+
+            <Button
+                android:id="@+id/btn_media_music"
+                android:layout_width="65dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="26dp"
+                android:background="@drawable/img_media_music1"
+             />
+
+            <Button
+                android:id="@+id/btn_media_add"
+                android:layout_width="33dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="553dp"
+                android:background="@drawable/bg_media_add"/>
+
+            <Button
+                android:id="@+id/btn_media_delete"
+                android:layout_width="33dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="31dp"
+                android:background="@drawable/bg_media_delete"/>
+        </LinearLayout>
+
+        <!--2 视音频,图片列表-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--3 视音频列表-->
+            <FrameLayout
+                android:visibility="visible"
+                android:id="@+id/fl_media_listmusic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <!--4 listview-->
+                <ListView
+                    android:id="@+id/lv_media_listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="292dp"
+                    android:layout_marginTop="10dp"
+                    android:divider="@drawable/img_media_line"
+                    android:dividerHeight="2dp">
+                </ListView>
+                <!--4 无文件显示默认图片-->
+                <ImageView
+                        android:id="@+id/iv_media_nofile"
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/img_media_sorry"
+                        android:layout_marginBottom="10dp"
+                        android:paddingTop="90dp"/>
+                <!--4 无文件提示导入文件-->
+                <TextView
+                        android:id="@+id/tv_media_nofile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lines="1"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="20dp"
+                        android:layout_gravity="center_horizontal||bottom"
+                        android:layout_marginBottom="20dp"
+                        android:text="还没有文件！请导入文件 "
+                        android:textColor="#C9C7C7"
+                        android:textSize="25sp"/>
+            </FrameLayout>
+            <!--3 图片列表-->
+            <FrameLayout
+                android:id="@+id/fl_media_listpic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+                <!--4 listview-->
+                <ListView
+                    android:id="@+id/lv_media_pic_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="292dp"
+                    android:layout_marginTop="10dp"
+                    android:divider="@drawable/img_media_line"
+                    android:dividerHeight="2dp"
+                    />
+                <!--4 无文件显示默认图片-->
+                <ImageView
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/img_media_sorry"
+                        android:paddingTop="90dp"/>
+                <!--4 无文件提示导入文件-->
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lines="1"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="20dp"
+                        android:layout_gravity="center_horizontal||bottom"
+                        android:layout_marginBottom="20dp"
+                        android:text="还没有文件！请导入文件 "
+                        android:textColor="#C9C7C7"
+                        android:textSize="25sp"/>
+            </FrameLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <!--1 切换全屏大图-->
+    <RelativeLayout
+        android:id="@+id/rl_media_bigpic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="#000000">
+        <!--2 全屏大图viewpager-->
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_media_bigpic_big"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="200dp"
+            android:paddingBottom="200dp"
+            />
+        <!--2 大图控制-->
+        <LinearLayout
+            android:id="@+id/ll_media_bigpic_control"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/pic_media_picbg"
+            android:orientation="horizontal">
+            <!--3 大图左旋-->
+            <ImageView
+                android:id="@+id/iv_bigpic_rotateleft"
+                android:layout_width="39dp"
+                android:layout_height="43dp"
+                android:src="@drawable/bg_pic_rolleft"
+                android:layout_marginTop="14dp"
+                android:layout_marginLeft="259dp"
+                android:clickable="true"/>
+            <!--3 大图播放、暂停-->
+            <ImageView
+                android:id="@+id/iv_bigpic_start_pause"
+                android:layout_width="39dp"
+                android:layout_height="43dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginLeft="162dp"
+                android:src="@drawable/pic_media_start"
+                android:clickable="true"/>
+            <!--3 大图右旋-->
+            <ImageView
+                android:id="@+id/iv_bigpic_rotateright"
+                android:layout_width="39dp"
+                android:layout_height="43dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginLeft="162dp"
+                android:background="@drawable/bg_pic_rolright"
+                android:clickable="true"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

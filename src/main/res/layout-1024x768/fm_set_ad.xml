@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pv="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/tv_set_ad_switch_ad"
+        style="@style/set_detail"
+        android:text="启用" />
+
+    <com.hejia.myview.SwitchButton
+        android:id="@+id/switch_set_ad_ad"
+        style="@style/set_switchbutton"
+        android:track="@drawable/switch_set_track"
+        pv:mask="@drawable/switch_set_mask" />
+
+    <ImageView
+        android:id="@+id/iv_set_ad_line1"
+        style="@style/set_right_line"
+        android:layout_below="@+id/tv_set_ad_switch_ad" />
+
+    <TextView
+        android:id="@+id/tv_set_ad_video_server"
+        style="@style/set_detail"
+        android:layout_below="@+id/iv_set_ad_line1"
+        android:text="视频服务器" />
+
+    <ImageView
+        android:id="@+id/iv_set_ad_line2"
+        style="@style/set_right_line"
+        android:layout_below="@+id/tv_set_ad_video_server" />
+
+    <TextView
+        android:id="@+id/tv_set_ad_port"
+        style="@style/set_detail"
+        android:layout_below="@+id/iv_set_ad_line2"
+        android:text="端口" />
+
+    <ImageView
+        android:id="@+id/iv_set_ad_line3"
+        style="@style/set_right_line"
+        android:layout_below="@+id/tv_set_ad_port" />
+
+    <TextView
+        android:id="@+id/tv_set_ad_http"
+        style="@style/set_detail"
+        android:layout_below="@+id/iv_set_ad_line3"
+        android:text="协议" />
+
+    <ImageView
+        android:id="@+id/iv_set_ad_line4"
+        style="@style/set_right_line"
+        android:layout_below="@+id/tv_set_ad_http" />
+
+    <TextView
+        android:id="@+id/tv_set_ad_level"
+        style="@style/set_detail"
+        android:layout_below="@+id/iv_set_ad_line4"
+        android:text="优先级" />
+
+    <ImageView
+        android:id="@+id/iv_set_ad_line6"
+        style="@style/set_right_line"
+        android:layout_below="@+id/tv_set_ad_level" />
+
+</RelativeLayout>

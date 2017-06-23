@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_cloud_linearlayout"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+		    <TextView
+	            android:id="@+id/dcdc_textView1_left"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="8dp"
+	            android:text="工作状态"
+	            android:textSize="@dimen/size_cloud_battery" />
+	
+	        <TextView
+	            android:id="@+id/dcdc_tv_left_01"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="4dp"
+	            android:text="  "
+	            android:textColor="@color/cloud_front_color"
+	            android:textSize="@dimen/size_cloud_battery_no" />
+	    </LinearLayout>
+	    <LinearLayout
+	        android:layout_width="0dp"
+	        android:layout_height="36dp" 
+	        android:layout_weight="1"
+	        android:background="@drawable/bg_cloud_linearlayout"
+	        android:gravity="center_vertical"
+	        android:orientation="horizontal">
+		    <TextView
+	            android:id="@+id/dcdc_textView1_right"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="8dp"
+	            android:text="输出电流"
+	            android:textSize="@dimen/size_cloud_battery" />
+	
+	        <TextView
+	            android:id="@+id/dcdc_tv_right_01"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="4dp"
+	            android:text="  "
+	            android:textColor="@color/cloud_front_color"
+	            android:textSize="@dimen/size_cloud_battery_no" />
+	        
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="8dp"
+	            android:text="A"
+	            android:textSize="@dimen/size_cloud_battery" />
+	    </LinearLayout>
+      
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_cloud_linearlayout"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+		    <TextView
+	            android:id="@+id/dcdc_textView2_left"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="8dp"
+	            android:text="输出电压"
+	            android:textSize="@dimen/size_cloud_battery" />
+	
+	        <TextView
+	            android:id="@+id/dcdc_tv_left_02"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="4dp"
+	            android:text="  "
+	            android:textColor="@color/cloud_front_color"
+	            android:textSize="@dimen/size_cloud_battery_no" />
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="8dp"
+	            android:text="V"
+	            android:textSize="@dimen/size_cloud_battery" />
+	    </LinearLayout>
+	    <LinearLayout
+	        android:layout_width="0dp"
+	        android:layout_height="36dp" 
+	        android:layout_weight="1"
+	        android:background="@drawable/bg_cloud_linearlayout"
+	        android:gravity="center_vertical"
+	        android:orientation="horizontal">
+		    <TextView
+	            android:id="@+id/dcdc_textView2_right"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="8dp"
+	            android:text="控制器温度"
+	            android:textSize="@dimen/size_cloud_battery" />
+	
+	        <TextView
+	            android:id="@+id/dcdc_tv_right_02"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="4dp"
+	            android:text="  "
+	            android:textColor="@color/cloud_front_color"
+	            android:textSize="@dimen/size_cloud_battery_no" />
+	        
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="8dp"
+	            android:text="℃"
+	            android:textSize="@dimen/size_cloud_battery" />
+	    </LinearLayout>
+      
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_cloud_linearlayout"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+		    <TextView
+	            android:id="@+id/dcdc_textView3_left"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="8dp"
+	            android:text="总线状态"
+	            android:textSize="@dimen/size_cloud_battery" />
+	
+	        <TextView
+	            android:id="@+id/dcdc_tv_left_03"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="4dp"
+	            android:text="  "
+	            android:textColor="@color/cloud_front_color"
+	            android:textSize="@dimen/size_cloud_battery_no" />
+	    </LinearLayout>
+	    <LinearLayout
+	        android:layout_width="0dp"
+	        android:layout_height="36dp" 
+	        android:layout_weight="1"
+	        android:background="@drawable/bg_cloud_linearlayout"
+	        android:gravity="center_vertical"
+	        android:orientation="horizontal">
+		    <TextView
+	            android:id="@+id/dcdc_textView3_right"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="8dp"
+	            android:text="硬件状态"
+	            android:textSize="@dimen/size_cloud_battery" />
+	
+	        <TextView
+	            android:id="@+id/dcdc_tv_right_03"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="4dp"
+	            android:text="  "
+	            android:textColor="@color/cloud_front_color"
+	            android:textSize="@dimen/size_cloud_battery_no" />
+	    </LinearLayout>
+      
+    </LinearLayout>
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_cloud_linearlayout"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+		    <TextView
+	            android:id="@+id/dcdc_textView4_left"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="8dp"
+	            android:text="温度状态"
+	            android:textSize="@dimen/size_cloud_battery" />
+	
+	        <TextView
+	            android:id="@+id/dcdc_tv_left_04"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="4dp"
+	            android:text="  "
+	            android:textColor="@color/cloud_front_color"
+	            android:textSize="@dimen/size_cloud_battery_no" />
+	    </LinearLayout>
+	    <LinearLayout
+	        android:layout_width="0dp"
+	        android:layout_height="36dp" 
+	        android:layout_weight="1"
+	        android:background="@drawable/bg_cloud_linearlayout"
+	        android:gravity="center_vertical"
+	        android:orientation="horizontal">
+		    <TextView
+	            android:id="@+id/dcdc_textView4_right"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="8dp"
+	            android:text="输入电流状态"
+	            android:textSize="@dimen/size_cloud_battery" />
+	
+	        <TextView
+	            android:id="@+id/dcdc_tv_right_04"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="4dp"
+	            android:text="  "
+	            android:textColor="@color/cloud_front_color"
+				android:textSize="@dimen/size_cloud_battery_no"/>
+	    </LinearLayout>
+      
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_cloud_linearlayout"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+		    <TextView
+	            android:id="@+id/dcdc_textView5_left"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="8dp"
+	            android:text="输入电压状态"
+	            android:textSize="@dimen/size_cloud_battery" />
+	
+	        <TextView
+	            android:id="@+id/dcdc_tv_left_05"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="4dp"
+	            android:text="  " 
+	            android:textColor="@color/cloud_front_color"
+	            android:textSize="@dimen/size_cloud_battery_no"/>
+	    </LinearLayout>
+	    <LinearLayout
+	        android:layout_width="0dp"
+	        android:layout_height="36dp" 
+	        android:layout_weight="1"
+	        android:background="@drawable/bg_cloud_linearlayout"
+	        android:gravity="center_vertical"
+	        android:orientation="horizontal">
+		    <TextView
+	            android:id="@+id/dcdc_textView5_right"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="8dp"
+	            android:text="输出电压状态"
+	            android:textSize="@dimen/size_cloud_battery" />
+	
+	        <TextView
+	            android:id="@+id/dcdc_tv_right_05"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="4dp"
+	            android:text="  "
+	            android:textColor="@color/cloud_front_color"
+	            android:textSize="@dimen/size_cloud_battery_no" />
+	    </LinearLayout>
+      
+    </LinearLayout>
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_cloud_linearlayout"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+		    <TextView
+	            android:id="@+id/dcdc_textView6_left"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="8dp"
+	            android:text="生命周期"
+	            android:textSize="@dimen/size_cloud_battery" />
+	
+	        <TextView
+	            android:id="@+id/dcdc_tv_left_06"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="4dp"
+	            android:text="  "
+	            android:textColor="@color/cloud_front_color"
+	            android:textSize="@dimen/size_cloud_battery_no" />
+	    </LinearLayout>
+	    <LinearLayout
+	        android:layout_width="0dp"
+	        android:layout_height="36dp" 
+	        android:layout_weight="1"
+	        android:background="@drawable/bg_cloud_linearlayout"
+	        android:gravity="center_vertical"
+	        android:orientation="horizontal">
+		    <TextView
+	            android:id="@+id/dcdc_textView6_right"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="8dp"
+	            android:text="母线电压"
+	            android:textSize="@dimen/size_cloud_battery" />
+	
+	        <TextView
+	            android:id="@+id/dcdc_tv_right_06"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="4dp"
+	            android:text="  "
+	            android:textColor="@color/cloud_front_color"
+	            android:textSize="@dimen/size_cloud_battery_no" />
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="8dp"
+	            android:text="V"
+	            android:textSize="@dimen/size_cloud_battery" />
+	    </LinearLayout>
+      
+    </LinearLayout>
+
+
+</LinearLayout>

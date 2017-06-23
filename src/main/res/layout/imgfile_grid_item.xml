@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="5dp" >
+
+    <ImageView
+        android:id="@+id/iv_imgitem_fileIcon"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:src="@mipmap/ic_launcher"
+       >
+    </ImageView>
+
+    <com.hejia.media.MyTextView
+        android:id="@+id/tv_imgitem_fileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_imgitem_fileIcon"
+        android:layout_centerHorizontal="true"
+        android:ellipsize="marquee"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="#111"
+        android:text="dfsdfsdfsdfsd"
+        />
+
+    <ImageView
+        android:id="@+id/checkbox_imgitem_folder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:clickable="false"
+        android:focusable="false"
+        android:visibility="gone"
+        android:gravity="center_vertical"
+        android:src="@drawable/pic_media_checked"
+        />
+
+</RelativeLayout>

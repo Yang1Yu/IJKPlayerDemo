@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_radio_ruler_cell"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="32dp"
+        android:background="@null"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_radioruler_cell"/>
+
+    <TextView
+        android:id="@+id/tv_radio_ruler_cell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/iv_radio_ruler_cell"
+        android:background="@null"
+        android:textColor="#fff"
+        android:textSize="35sp"/>
+
+
+</RelativeLayout>

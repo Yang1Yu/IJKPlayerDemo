@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="220dp"
+    android:background="@null" >
+
+    <TextView
+        android:id="@+id/tv_dialog_set_about_upgrade_yes_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="24dp"
+        android:text="※ 此操作存在风险"
+        android:textColor="#111"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_dialog_set_about_upgrade_yes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tv_dialog_set_about_upgrade_yes_hint"
+        android:layout_marginLeft="96dp"
+        android:text="请确认是否开始升级 ?"
+        android:textColor="#111"
+        android:textSize="35sp" />
+
+    <Button
+        android:id="@+id/btn_dialog_set_about_upgrade_yes_yes"
+        style="@style/dialog_set_yes"
+        android:layout_below="@+id/tv_dialog_set_about_upgrade_yes" />
+
+    <Button
+        android:id="@+id/btn_dialog_set_about_upgrade_yes_no"
+        style="@style/dialog_set_server_no"
+        android:layout_alignTop="@+id/btn_dialog_set_about_upgrade_yes_yes"
+        android:layout_toRightOf="@+id/btn_dialog_set_about_upgrade_yes_yes" />
+
+</RelativeLayout>

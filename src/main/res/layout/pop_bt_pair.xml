@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="500dp"
+        android:layout_height="450dp"
+        android:background="@drawable/bg_bt_no"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center_horizontal"
+            android:text="连接设备配对码是否为："
+            android:textColor="#222"
+            android:textSize="30sp"/>
+
+        <TextView
+            android:id="@+id/tv_bt_ssppin"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center_horizontal"
+            android:text="992200"
+            android:textColor="#222"
+            android:textSize="50sp"/>
+
+        <TextView
+            android:id="@+id/tv_bt_ssppin_pairing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:text="配对中..."
+            android:textColor="#222"
+            android:textSize="30sp"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_bt_ssppin_yes"
+                android:layout_width="200dp"
+                android:layout_height="80dp"
+                android:background="@drawable/img_set_yes"/>
+
+            <Button
+                android:id="@+id/btn_bt_ssppin_cancel"
+                android:layout_width="200dp"
+                android:layout_height="80dp"
+                android:background="@drawable/img_bt_no_frame"
+                android:text="取消"
+                android:textColor="#111"
+                android:textSize="20sp"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/btn_bt_ssppin_no"
+                android:layout_width="200dp"
+                android:layout_height="80dp"
+                android:background="@drawable/img_set_no"
+                android:gravity="right|center_vertical"
+                android:paddingRight="20dp"
+                android:textSize="20sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

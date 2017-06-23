@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:pv="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/rl_wifi"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_set_wifi_switch_share"
+        style="@style/set_detail"
+        android:text="启用热点"/>
+
+    <ImageView
+        android:id="@+id/iv_set_wifi_line2"
+        style="@style/set_right_line"
+        android:layout_below="@+id/tv_set_wifi_switch_share"/>
+
+    <TextView
+        android:id="@+id/tv_set_wifi_share_name"
+        android:layout_width="160dp"
+        android:layout_height="44dp"
+        android:layout_below="@+id/iv_set_wifi_line2"
+        android:layout_marginLeft="24dp"
+        android:gravity="center_vertical"
+        android:text="热点名称"
+        android:textColor="#fff"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:id="@+id/et_set_wifi_share_nameing"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_above="@+id/iv_set_wifi_line3"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@+id/tv_set_wifi_share_name"
+        android:background="@null"
+        android:cursorVisible="true"
+        android:digits="1234567890qwertyuioplkjhgfdsazxcvbnmQWERTYUIOPLKJHGFDSAZXCVBNM"
+        android:gravity="center_vertical"
+        android:hint="请输入1至16位的英文或数字"
+        android:inputType="textNoSuggestions"
+        android:longClickable="false"
+        android:maxLength="16"
+        android:singleLine="true"
+        android:textColor="#fff"
+        android:textSize="18sp"/>
+
+    <ImageView
+        android:id="@+id/iv_set_wifi_line3"
+        style="@style/set_right_line"
+        android:layout_below="@+id/tv_set_wifi_share_name"/>
+
+    <TextView
+        android:id="@+id/tv_set_wifi_switch_password"
+        style="@style/set_detail"
+        android:layout_below="@+id/iv_set_wifi_line3"
+        android:text="启用加密"/>
+
+    <ImageView
+        android:id="@+id/iv_set_wifi_line4"
+        style="@style/set_right_line"
+        android:layout_below="@+id/tv_set_wifi_switch_password"/>
+
+    <TextView
+        android:id="@+id/tv_set_wifi_password"
+        android:layout_width="160dp"
+        android:layout_height="44dp"
+        android:layout_below="@+id/iv_set_wifi_line4"
+        android:layout_marginLeft="24dp"
+        android:gravity="center_vertical"
+        android:text="加密密码"
+        android:textColor="#fff"
+        android:textSize="18sp"/>
+
+    <ImageView
+        android:id="@+id/iv_set_wifi_line5"
+        style="@style/set_right_line"
+        android:layout_below="@+id/tv_set_wifi_password"/>
+
+    <com.hejia.myview.SwitchButton
+        android:id="@+id/switch_set_wifi_share"
+        style="@style/set_switchbutton"
+        android:track="@drawable/switch_set_track"
+        pv:mask="@drawable/switch_set_mask"/>
+
+    <com.hejia.myview.SwitchButton
+        android:id="@+id/switch_set_wifi_password"
+        style="@style/set_switchbutton"
+        android:layout_below="@+id/iv_set_wifi_line3"
+        android:track="@drawable/switch_set_track"
+        pv:mask="@drawable/switch_set_mask"/>
+
+    <EditText
+        android:id="@+id/et_set_wifi_passwording"
+        android:layout_width="192dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_set_wifi_line4"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_toRightOf="@+id/tv_set_wifi_password"
+        android:background="@null"
+        android:cursorVisible="true"
+        android:digits="1234567890qwertyuioplkjhgfdsazxcvbnmQWERTYUIOPLKJHGFDSAZXCVBNM"
+        android:ems="10"
+        android:hint="请输入8-16位英文或数字"
+        android:inputType="textNoSuggestions"
+        android:longClickable="false"
+        android:maxLength="16"
+        android:singleLine="true"
+        android:textColor="#fff"
+        android:textSize="18sp"/>
+
+    <ImageView
+        android:id="@+id/iv_set_wifi_lock"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/iv_set_wifi_line4"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/img_set_wifi_lock"/>
+
+</RelativeLayout>

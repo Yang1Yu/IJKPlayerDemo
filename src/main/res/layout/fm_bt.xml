@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/fragment_bt"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/rg_bt"
+        android:layout_width="match_parent"
+        android:layout_height="134dp"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp" >
+
+        <RadioButton
+            android:id="@+id/rb_bt_dial"
+            style="@style/rb_bt"
+            android:background="@drawable/img_bt_dial"
+            android:button="@null" />
+
+        <RadioButton
+            android:id="@+id/rb_bt_pb"
+            style="@style/rb_bt"
+            android:background="@drawable/img_bt_pb"
+            android:button="@null" />
+
+        <RadioButton
+            android:id="@+id/rb_bt_history"
+            style="@style/rb_bt"
+            android:background="@drawable/img_bt_history"
+            android:button="@null" />
+
+        <RadioButton
+            android:id="@+id/rb_bt_music"
+            style="@style/rb_bt"
+            android:background="@drawable/img_bt_music"
+            android:button="@null" />
+
+        <RadioButton
+            android:id="@+id/rb_bt_ctd"
+            style="@style/rb_bt"
+            android:background="@drawable/img_bt_ctd"
+            android:button="@null" />
+    </RadioGroup>
+
+</LinearLayout>

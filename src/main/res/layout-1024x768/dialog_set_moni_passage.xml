@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="310dp"
+    android:background="@null" >
+
+    <RadioGroup
+        android:id="@+id/rg_dialog_set_moni_passage"
+        style="@style/dialog_set_rg" >
+
+        <RadioButton
+            android:id="@+id/rb_dialog_set_moni_passage_moni4"
+            style="@style/dialog_set_rb"
+            android:text="全选" />
+
+        <ImageView
+            android:id="@+id/iv_dialog_set_moni_passage_line1"
+            style="@style/dialog_set_line" />
+
+        <RadioButton
+            android:id="@+id/rb_dialog_set_moni_passage_moni1"
+            style="@style/dialog_set_rb"
+            android:text="1路" />
+
+        <ImageView
+            android:id="@+id/iv_dialog_set_moni_passage_line2"
+            style="@style/dialog_set_line" />
+
+        <RadioButton
+            android:id="@+id/rb_dialog_set_moni_passage_moni2"
+            style="@style/dialog_set_rb"
+            android:text="2路" />
+
+        <ImageView
+            android:id="@+id/iv_dialog_set_moni_passage_line3"
+            style="@style/dialog_set_line" />
+
+        <RadioButton
+            android:id="@+id/rb_dialog_set_moni_passage_moni3"
+            style="@style/dialog_set_rb"
+            android:text="3路" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_dialog_set_moni_passage_yes"
+        style="@style/dialog_set_yes"
+        android:layout_below="@+id/rg_dialog_set_moni_passage" />
+
+    <Button
+        android:id="@+id/btn_dialog_set_moni_passage_no"
+        style="@style/dialog_set_no"
+        android:layout_alignTop="@+id/btn_dialog_set_moni_passage_yes"
+        android:layout_toRightOf="@+id/btn_dialog_set_moni_passage_yes" />
+
+</RelativeLayout>

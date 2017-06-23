@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pv="http://schemas.android.com/apk/res/com.hejia.project_two"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!--
+    <TextView
+        android:id="@+id/tv_set_vol_mute"
+        style="@style/set_detail"
+        android:text="静音" />
+
+    <ImageView
+        android:id="@+id/iv_set_vol_line1"
+        style="@style/set_right_line"
+        android:layout_below="@+id/tv_set_vol_mute" />
+
+    <TextView
+        android:id="@+id/tv_set_vol_volume"
+        style="@style/set_detail"
+        android:layout_below="@+id/iv_set_vol_line1"
+        android:text="铃声音量" />
+
+    <ImageView
+        android:id="@+id/iv_set_vol_line2"
+        style="@style/set_right_line"
+        android:layout_below="@+id/tv_set_vol_volume" />
+
+    <ImageView
+        android:id="@+id/iv_set_vol_sub"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_below="@+id/iv_set_vol_line2"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="12dp"
+        android:scaleType="center"
+        android:src="@drawable/img_set_vol_sub" />
+
+    <SeekBar
+        android:id="@+id/seekbar_set_vol_volume"
+        android:layout_width="400dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/iv_set_vol_line2"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/iv_set_vol_sub"
+        android:progressDrawable="@drawable/seekbar_set"
+        android:secondaryProgress="0"
+        android:thumb="@drawable/sbar_set_thumb" />
+
+    <ImageView
+        android:id="@+id/iv_set_vol_add"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/iv_set_vol_line2"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="12dp"
+        android:scaleType="center"
+        android:src="@drawable/img_set_vol_add" />
+
+    <ImageView
+        android:id="@+id/iv_set_vol_line3"
+        style="@style/set_right_line"
+        android:layout_below="@+id/seekbar_set_vol_volume" />
+
+    <com.hejia.myview.SwitchButton
+        android:id="@+id/switch_set_vol_mute"
+        style="@style/set_switchbutton"
+        android:layout_below="@+id/iv_set_routine_line1"
+        android:track="@drawable/switch_set_track"
+        pv:mask="@drawable/switch_set_mask" />
+
+    -->
+
+    <TextView
+        android:id="@+id/tv_set_vol_tone"
+        style="@style/set_detail"
+        android:text="音色" />
+
+    <ImageView
+        android:id="@+id/iv_set_vol_line4"
+        style="@style/set_right_line"
+        android:layout_below="@+id/tv_set_vol_tone" />
+
+    <Button
+        android:id="@+id/btn_set_vol_cla"
+        style="@style/set_tone"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/iv_set_vol_line4"
+        android:layout_marginLeft="57dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/img_set_vol_btnbg1"
+        android:text="古典" />
+
+    <Button
+        android:id="@+id/btn_set_vol_jazz"
+        style="@style/set_tone"
+        android:layout_alignTop="@+id/btn_set_vol_cla"
+        android:layout_marginLeft="18dp"
+        android:layout_toRightOf="@+id/btn_set_vol_cla"
+        android:background="@drawable/img_set_vol_btnbg1"
+        android:text="爵士" />
+
+    <Button
+        android:id="@+id/btn_set_vol_pop"
+        style="@style/set_tone"
+        android:layout_alignTop="@+id/btn_set_vol_cla"
+        android:layout_marginLeft="18dp"
+        android:layout_toRightOf="@+id/btn_set_vol_jazz"
+        android:background="@drawable/img_set_vol_btnbg1"
+        android:text="流行" />
+
+    <Button
+        android:id="@+id/btn_set_vol_mbass"
+        style="@style/set_tone"
+        android:layout_alignTop="@+id/btn_set_vol_cla"
+        android:layout_marginLeft="18dp"
+        android:layout_toRightOf="@+id/btn_set_vol_pop"
+        android:background="@drawable/img_set_vol_btnbg1"
+        android:text="重低音" />
+
+    <Button
+        android:id="@+id/btn_set_vol_rock"
+        style="@style/set_tone"
+        android:layout_alignLeft="@+id/btn_set_vol_cla"
+        android:layout_below="@+id/btn_set_vol_cla"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/img_set_vol_btnbg1"
+        android:text="摇滚" />
+
+    <Button
+        android:id="@+id/btn_set_vol_dance"
+        style="@style/set_tone"
+        android:layout_alignTop="@+id/btn_set_vol_rock"
+        android:layout_marginLeft="18dp"
+        android:layout_toRightOf="@+id/btn_set_vol_rock"
+        android:background="@drawable/img_set_vol_btnbg1"
+        android:text="舞曲" />
+
+    <Button
+        android:id="@+id/btn_set_vol_soft"
+        style="@style/set_tone"
+        android:layout_alignTop="@+id/btn_set_vol_rock"
+        android:layout_marginLeft="18dp"
+        android:layout_toRightOf="@+id/btn_set_vol_dance"
+        android:background="@drawable/img_set_vol_btnbg1"
+        android:text="柔和" />
+
+    <Button
+        android:id="@+id/btn_set_vol_norm"
+        style="@style/set_tone"
+        android:layout_alignTop="@+id/btn_set_vol_rock"
+        android:layout_marginLeft="18dp"
+        android:layout_toRightOf="@+id/btn_set_vol_soft"
+        android:background="@drawable/img_set_vol_btnbg1"
+        android:text="标准" />
+
+    <ImageView
+        android:id="@+id/iv_set_vol_line5"
+        style="@style/set_right_line"
+        android:layout_below="@+id/btn_set_vol_rock"
+        android:layout_marginTop="40dp" />
+
+</RelativeLayout>
